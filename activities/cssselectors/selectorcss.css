@@ -1,0 +1,8 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+#first {color: brown}
+.second {color:green}
+.green {color:green}
+.bigger {font-size: 24pt;}
+main .bigger {font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+main .bigger {font-family: Jokerman;}
+.bolder {font-weight: 600;}
