@@ -1,11 +1,8 @@
-body {font-family: Arial, Helvetica, sans-serif; font: size 16px;}
-header h1 {font-family: cursive; color:#003366;}
-main .hero {font-family: cursive; color:#C65D1D;}
-main .interests {font-family: cursive; color:#1cadb6;}
+body {font-family: Arial, Helvetica, sans-serif; font: size 16px; color: black;}
 #herolink {font-weight: 550; color:#C65D1D;}
-#interestslink {font-weight: 550; color:#1cadb6;}
-main .firstlist {color:#003366}
-main .secondlist {color:#808080}
-main .herospan {font-weight: 550;}
-main .interestsspan {font-weight: 550;}
-.background {background-color:black;}
+#interestslink {font-weight: 550; color:#003366}
+main .emphasize {color:#003366; font-weight: 550;}
+main .emphasize2 {color:#C65D1D; font-weight: 550; font-family: cursive;}
+main .emphasize3 {color:#003366; font-weight: 550; font-family: cursive;}
+main .de-emphasize {color:#808080}
+.background {background-color:#DDC26F;}
