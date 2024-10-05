@@ -1,0 +1,13 @@
+body {font-family: Arial, Helvetica, sans-serif; color:white; font-size:medium; 
+/*background-image: url('bluebackground.jpg'); background-color: blue;*/
+background: url('bluebackground.jpg') blue;}
+
+.list {list-style-image: url('bullet.png');}
+
+header {/*background-image: url('sailboatedited.png');
+background-repeat: no-repeat; background-position: top right;*/
+background: url('sailboatedited.png') top right no-repeat}
+
+nav a {color: rgb(30, 243, 30);}
+
+.current {color: rgb(192, 191, 191);}
