@@ -1,0 +1,5 @@
+body {font-size: large; font-family: Arial, Helvetica, sans-serif; color: white;}
+
+main {background: url('franceflagedited.png') top right no-repeat}
+
+main .current {color: gray;}
