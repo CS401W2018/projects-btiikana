@@ -1,5 +1,7 @@
-body {font-size: large; font-family: Arial, Helvetica, sans-serif; color: white;}
+header {font-family: 'Times New Roman', Times, serif;}
 
-main {background: url('franceflagedited.png') top right no-repeat}
+body { font-size: larger; font-family:'Times New Roman', Times, serif; color: goldenrod; background: blue url('Fleur-de-lis\ 1.png')}
 
-main .current {color: gray;}
+nav a {color: goldenrod;}
+
+nav .current {color: lightgrey;}
