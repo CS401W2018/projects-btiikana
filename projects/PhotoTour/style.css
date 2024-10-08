@@ -6,4 +6,4 @@ nav a {color: goldenrod;}
 
 nav .current {color: lightgrey;}
 
-.list {list-style-image: url('bullet.png');}
+main .list {list-style-image: url('bullet.png');}
