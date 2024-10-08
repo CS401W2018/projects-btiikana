@@ -1,7 +1,9 @@
-header {font-family: 'Times New Roman', Times, serif;}
-
 body { font-size: larger; font-family:'Times New Roman', Times, serif; color: goldenrod; background: blue url('Fleur-de-lis\ 1.png')}
+
+header {font-family: 'Times New Roman', Times, serif; background: url('frenchflag.png') no-repeat top right; height: 100px;}
 
 nav a {color: goldenrod;}
 
 nav .current {color: lightgrey;}
+
+.list {list-style-image: url('bullet.png');}
