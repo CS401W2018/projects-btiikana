@@ -1,0 +1,16 @@
+/* Default Styles */
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Header Styles */
+header {
+    font-family: myFirstFont;
+    background-color: gray; 
+    width: 600px;
+    margin: 30px;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url("BeautifulPeoplePersonalUse-dE0g.ttf");
+  }
+  
