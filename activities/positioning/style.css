@@ -77,6 +77,18 @@ nav a:hover {
     width: 200px;
 }
 
+#longsword {
+    width: 100px;
+    border: 5px double rgba(218, 165, 32, 0.582);
+    position: absolute;
+    top: 1700px;
+    right: 50px;
+}
+
+#longsword img {
+    width: 100px
+}
+
 .clear {
     clear: both;
 }
