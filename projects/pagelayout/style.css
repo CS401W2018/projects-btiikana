@@ -14,9 +14,8 @@ body {
 #wrapper {
     width: 900px;
     margin: 0 auto;
-    background-color: rgba(128, 128, 128, 0.247);
-    border: 5px solid rgba(218, 165, 32, 0.466);
-    border-style: double;
+    background-color: rgba(78, 110, 131, 0.274);
+    border: 2px dotted rgba(78, 110, 131, 0.61);
 }
 
 /* Header Style */
@@ -25,7 +24,22 @@ header {
     width: 50%;
     margin: 50px auto;
     text-align: center;
-    border: 4px dotted black;
+    border: 1px dotted black;
+    background-color: rgba(255, 255, 255, 0.404);
+}
+
+header h1 {
+    color: white;
+    background-color: rgba(32, 76, 105, 0.459);
+    margin: 0;
+    padding: 20px
+}
+
+header h2 {
+    color: rgb(153, 230, 39);
+    background-color: rgba(255, 255, 255, 0.116);
+    margin: 0;
+    padding: 30px;
 }
 
 /* Nav Style */
@@ -53,8 +67,8 @@ nav a {
 }
 
 nav a:hover {
-    background-color: rgba(115, 134, 155, 0.356);
-    color: rgb(182, 134, 14);
+    background-color: rgba(255, 255, 255, 0.404);
+    color: black;
 }
 
 /* Main Style */
