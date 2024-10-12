@@ -1,0 +1,67 @@
+/* Default Style */
+body {
+    font-family: mySecondFont;
+    font-size: large;
+    color: black;
+    background: url('white\ tech.jpg') center no-repeat;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url('');
+}
+
+@font-face {
+    font-family: mySecondFont;
+    src: url('FFGoodProCond-Regular.ttf');
+}
+
+#wrapper {
+    width: 900px;
+    margin: 0 auto;
+    background-color: rgba(94, 130, 155, 0.253);
+    border: 2px dotted rgb(102, 96, 96);
+}
+
+/* Header Style */
+header {
+    font-family: mySecondFont;
+    color: black;
+    text-align: center;
+}
+/* Navigation Style */
+nav {
+    margin: 30px;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    float: left;
+    display: block;
+    padding: 5px 5px;
+    color: black;
+    border: 1px dotted rgb(92, 89, 89);
+    width: auto;
+    margin: 50px;
+}
+
+nav a {
+    font-size: larger;
+    color: black;
+    
+}
+
+/* Main Style */
+main h2 {
+    text-shadow: 10cm;
+}
+
+.clear {
+    clear: both;
+}
+
+/* Footer Style */
