@@ -1,0 +1,82 @@
+/* Default Style */
+body {
+    font-family: myFirstFont;
+    font-size: xx-large;
+    color: goldenrod;
+    background-image: url('background.jpg');
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url('CalamityJaneNF.ttf')
+}
+
+#wrapper {
+    width: 900px;
+    margin: 0 auto;
+    background-color: rgba(128, 128, 128, 0.247);
+    border: 5px solid rgba(218, 165, 32, 0.466);
+    border-style: double;
+}
+
+/* Header Style */
+header {
+    font-family: myFirstFont;
+    width: 50%;
+    margin: 50px auto;
+    text-align: center;
+    border: 10px double rgba(218, 165, 32, 0.616);
+}
+
+/* Nav Style */
+nav {
+    margin: 30px;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    float: left;
+}
+
+nav a {
+    display: block;
+    padding: 10px 5px;
+    color: goldenrod;
+    border: 1px double goldenrod;
+    width: 80px;
+    margin-left: 10px;
+}
+
+nav a:hover {
+    background-color: rgba(218, 165, 32, 0.356);
+    color: goldenrod;
+}
+
+/* Main Style */
+#katana {
+    width: 200px;
+    border: 5px double rgba(218, 165, 32, 0.582);
+    float: left;
+}
+
+#katana img {
+    width:200px;
+}
+
+#arabian {
+    width: 200px;
+    border: 5px double rgba(218, 165, 32, 0.596);
+    float: right;
+}
+
+#arabian img {
+    width: 200px;
+}
+
+.clear {
+    clear: both;
+}
