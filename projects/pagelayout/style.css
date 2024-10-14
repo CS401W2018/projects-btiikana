@@ -2,6 +2,7 @@
 body {
     font-family: myFirstFont;
     font-size: x-large;
+    font-style: normal;
     color: black;
     background: url('whitetech.jpg') center no-repeat;
 }
@@ -12,7 +13,7 @@ body {
 }
 
 #wrapper {
-    width: 900px;
+    max-width: 900px;
     margin: 0 auto;
     background-color: rgba(78, 110, 131, 0.274);
     border: 2px dotted rgba(78, 110, 131, 0.61);
@@ -23,37 +24,39 @@ header {
     font-family: myFirstFont;
     width: 50%;
     margin: 50px auto;
-    text-align: center;
     border: 1px dotted black;
     background-color: rgba(255, 255, 255, 0.404);
+
 }
 
 header h1 {
     color: white;
-    background-color: rgba(32, 76, 105, 0.459);
+    background-color: rgba(32, 76, 105, 0.336);
     margin: 0;
+    text-align: center;
     padding: 20px
 }
 
 header h2 {
-    color: rgb(153, 230, 39);
+    color: black;
     background-color: rgba(255, 255, 255, 0.116);
     margin: 0;
     padding: 30px;
+    text-align: center;
 }
 
 /* Nav Style */
 nav {
     margin: 30px;
+    font-weight: 1000;
 }
 
 nav ul {
     list-style-type: none;
-    text-align: center;
 }
 
 nav li {
-    float: left;
+    display: inline;
 }
 
 nav a {
@@ -63,36 +66,37 @@ nav a {
     color: black;
     border: 1px dotted black;
     width: 80px;
-    margin-left: 120px;
+    margin: auto 50px;
+    float: left;
 }
 
 nav a:hover {
     background-color: rgba(255, 255, 255, 0.404);
-    color: black;
+    color: goldenrod;
 }
 
 /* Main Style */
-#katana {
+#gtx4090 {
     width: 200px;
-    border: 5px double rgba(218, 165, 32, 0.582);
+    border: 5px double black;
     float: left;
 }
 
-#katana img {
+#gtx4090 img {
     width:200px;
 }
 
-#arabian {
+#gtx4070 {
     width: 200px;
     border: 5px double rgba(218, 165, 32, 0.596);
     float: right;
 }
 
-#arabian img {
+#gtx4070 img {
     width: 200px;
 }
 
-#longsword {
+#gtx3080 {
     width: 100px;
     border: 5px double rgba(218, 165, 32, 0.582);
     position: absolute;
@@ -100,10 +104,15 @@ nav a:hover {
     right: 500px;
 }
 
-#longsword img {
+#gtx30 img {
     width: 100px
 }
 
 .clear {
     clear: both;
+}
+
+/* Footer */
+footer {
+    background: url('Nvidia\ Logo\ 50x50.png') no-repeat ;
 }
