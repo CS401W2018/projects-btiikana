@@ -1,0 +1,15 @@
+/* Default Style */
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.container {
+    background-color: goldenrod;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+}
+
+.item {
+    background-color: rgba(0, 183, 255, 0.377);
+    border: thin solid black;
+}
