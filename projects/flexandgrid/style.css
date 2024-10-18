@@ -1,0 +1,38 @@
+/* Default Style */
+body {
+    font-family: myFirstFont;
+    color: rgba(255, 255, 255, 0.616);
+}
+
+body html {
+    height: 100%;
+}
+
+.bg {
+    background-image: url("background.jpeg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#wrapper {
+    max-width: 1900px;
+    margin: 0 auto;
+    background-color: rgba(12, 23, 29, 0.329);
+    border: 5px double gray;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url('Balgruf-JRye7.ttf');
+}
+
+/* Navigation Style */
+
+/* Main Style */
+
+/* Footer Style */
+footer a {
+    color: aliceblue;
+}
