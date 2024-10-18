@@ -3,7 +3,7 @@ body {
     font-family: myFirstFont;
     font-size: x-large;
     font-style: normal;
-    font-weight: 400px;
+    font-weight: 400;
     color: black;
     background: url('whitetech.jpg') center no-repeat;
 }
