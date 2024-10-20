@@ -16,13 +16,28 @@ body html {
     background-size: cover;
 }
 
+#adjustments {
+    margin: 20px;
+}
+
+#wrapper {
+    width: 1800px;
+    margin: 0 auto;
+    background: rgba(22, 21, 21, 0.582);
+    border: 5px double darkgray;
+}
+
 @font-face {
     font-family: myFirstFont;
     src: url('Balgruf-JRye7.ttf');
 }
 
 /* Navigation Style */
-.container1 {
+nav a {
+    margin-top: 20px;
+}
+.container {
+    font-size: larger;
     display: flex;
     flex-flow: row wrap;
     gap: 2px;
@@ -40,8 +55,120 @@ body html {
 
 
 /* Main Style */
+.textimagebox {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+
+.text {
+    color: rgba(204, 198, 198, 0.87);
+}
+
+.image {
+    font-style: italic;
+}
+
+.imagegrid {
+    display: grid;
+
+}
+
+#wolf {
+    width: 200px;
+    height: 300px;
+    border: 5px solid gray;
+}
+
+#wolf img {
+    width: 200px;
+    height: 300px;
+}
+
+#sabrecat {
+    width: 200px;
+    height: 300px;
+    border: 5px solid gray;
+}
+
+#sabrecat img {
+    width: 200px;
+    height: 300px;
+}
+
+#frostspider {
+    width: 200px;
+    height: 300px;
+    border: 5px solid gray;
+}
+
+#frostspider img {
+    width: 200px;
+    height: 300px;
+}
+
+#daedra {
+    width: 200px;
+    height: 300px;
+    border: 5px solid gray;
+}
+
+#daedra img {
+    width: 200px;
+    height: 300px;
+}
+
+#draugr {
+    width: 200px;
+    height: 300px;
+    border: 5px solid gray;
+}
+
+#draugr img {
+    width: 200px;
+    height: 300px;
+}
+
+#troll {
+    width: 200px;
+    height: 300px;
+    border: 5px solid gray;
+}
+
+#troll img {
+    width: 200px;
+    height: 300px;
+}
+
+#giant {
+    width: 200px;
+    height: 300px;
+    border: 5px solid gray;
+}
+
+#giant img {
+    width: 200px;
+    height: 300px;
+}
+
+#dragon {
+    width: 200px;
+    height: 300px;
+    border: 5px solid gray;
+}
+
+#dragon img {
+    width: 200px;
+    height: 300px;
+}
 
 /* Footer Style */
-footer a {
-    color: aliceblue;
+.container2 {
+    grid-template-columns: 5fr 5fr 5fr 5fr;
+    display: grid;
+    padding: 5px;
+}
+
+.item2 {
+    font-size: larger;
+    color: rgba(211, 208, 163, 0.733);
 }
