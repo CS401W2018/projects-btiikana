@@ -21,20 +21,36 @@ body html {
 }
 
 #wrapper {
-    width: 1800px;
+    width: 900px;
     margin: 0 auto;
-    background: rgba(22, 21, 21, 0.582);
-    border: 5px double darkgray;
+    background: rgba(22, 21, 21, 0.527);
+    border: 5px double rgba(218, 165, 32, 0.5);
 }
 
 @font-face {
     font-family: myFirstFont;
     src: url('Balgruf-JRye7.ttf');
 }
+/* Header Style */
+header h1 {
+    color: goldenrod;
+    font-size: 50px;
+}
+
+header h2 {
+    font-size: 30px;
+    margin-top: 50px;
+}
 
 /* Navigation Style */
+nav {
+    font-size: larger;
+}
+
 nav a {
-    margin-top: 20px;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 .container {
     font-size: larger;
@@ -55,9 +71,40 @@ nav a {
 
 
 /* Main Style */
+main {
+    font-size: larger;
+}
+
+main strong {
+    text-transform: uppercase;
+}
+
+main em {
+    color: rgb(184, 179, 179);
+}
+
+main b {
+    color: goldenrod;
+}
+
 .textimagebox {
     display: grid;
+    margin-bottom: 30px;
     grid-template-columns: 2fr 2fr;
+}
+
+.makeblock {
+    display: block;
+}
+
+aside {
+    margin-top: 10px;
+    margin-left: 30px;
+    padding: 10px 40px;
+    color: rgb(218, 165, 32);
+    float: left;
+    width: 40%;
+    border: 5px double rgba(218, 165, 32, 0.5);
 }
 
 .text {
@@ -66,17 +113,18 @@ nav a {
 
 .image {
     font-style: italic;
+    grid-template-columns: 2fr 2fr;
 }
 
 .imagegrid {
     display: grid;
-
+    justify-content: end;
 }
 
 #wolf {
     width: 200px;
     height: 300px;
-    border: 5px solid gray;
+    border: 2px solid rgba(218, 165, 32, 0.5);
 }
 
 #wolf img {
@@ -87,7 +135,7 @@ nav a {
 #sabrecat {
     width: 200px;
     height: 300px;
-    border: 5px solid gray;
+    border: 2px solid rgba(218, 165, 32, 0.5);
 }
 
 #sabrecat img {
@@ -98,7 +146,7 @@ nav a {
 #frostspider {
     width: 200px;
     height: 300px;
-    border: 5px solid gray;
+    border: 2px solid rgba(218, 165, 32, 0.5);
 }
 
 #frostspider img {
@@ -109,7 +157,7 @@ nav a {
 #daedra {
     width: 200px;
     height: 300px;
-    border: 5px solid gray;
+    border: 2px solid rgba(218, 165, 32, 0.5);
 }
 
 #daedra img {
@@ -120,7 +168,7 @@ nav a {
 #draugr {
     width: 200px;
     height: 300px;
-    border: 5px solid gray;
+    border: 2px solid rgba(218, 165, 32, 0.5);
 }
 
 #draugr img {
@@ -131,7 +179,7 @@ nav a {
 #troll {
     width: 200px;
     height: 300px;
-    border: 5px solid gray;
+    border: 2px solid rgba(218, 165, 32, 0.5);
 }
 
 #troll img {
@@ -142,7 +190,7 @@ nav a {
 #giant {
     width: 200px;
     height: 300px;
-    border: 5px solid gray;
+    border: 2px solid rgba(218, 165, 32, 0.5);
 }
 
 #giant img {
@@ -153,7 +201,7 @@ nav a {
 #dragon {
     width: 200px;
     height: 300px;
-    border: 5px solid gray;
+    border: 2px solid rgba(218, 165, 32, 0.5);
 }
 
 #dragon img {
@@ -162,6 +210,10 @@ nav a {
 }
 
 /* Footer Style */
+footer a {
+    display: block;
+}
+
 .container2 {
     grid-template-columns: 5fr 5fr 5fr 5fr;
     display: grid;
