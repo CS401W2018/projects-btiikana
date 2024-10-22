@@ -20,6 +20,11 @@ body html {
     margin: 20px;
 }
 
+.adjustments2 {
+    color: goldenrod;
+    text-shadow: 2px 2px black;
+}
+
 #wrapper {
     width: 900px;
     margin: 0 auto;
@@ -41,6 +46,8 @@ header h1 {
 header h2 {
     font-size: 30px;
     margin-top: 50px;
+    color: rgb(218, 165, 32);
+    text-shadow: 2px 2px black;
 }
 
 /* Navigation Style */
@@ -54,6 +61,12 @@ nav a {
     margin-bottom: 20px;
     text-shadow: 2px 2px black;
 }
+
+nav a:hover {
+    color: black;
+    text-shadow: 2px 2px white;
+}
+
 .container {
     font-size: larger;
     display: flex;
@@ -75,6 +88,11 @@ nav a {
 /* Main Style */
 main {
     font-size: larger;
+}
+
+main h2 {
+    color: goldenrod;
+    text-shadow: 2px 2px black;
 }
 
 main strong {
@@ -212,13 +230,12 @@ aside {
 }
 
 /* Footer Style */
-footer h2 {
-    color: goldenrod;
-    text-shadow: 2px 2px black;
-}
-
 footer a {
     display: block;
+}
+
+footer a:hover {
+    color: goldenrod;
 }
 
 .container2 {
@@ -230,4 +247,8 @@ footer a {
 .item2 {
     font-size: larger;
     color: rgba(211, 208, 163, 0.733);
+}
+
+footer p {
+    font-size: larger;
 }
