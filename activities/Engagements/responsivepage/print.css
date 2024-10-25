@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* Header Style */
+header {
+    background-color: blueviolet;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Navigation Style */
+nav {
+    background-color: cadetblue;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    display: block;
+    padding: 5px 10px;
+    color: white;
+    text-decoration: none;
+}
+
+nav a :hover {
+    text-decoration: underline;
+}
+
+/* Main Style */
+.waterfallparent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.waterfall {
+    width: 300px;
+    height: 200px;
+    border: thin solid black;
+    box-shadow: 3px 3px 10px black;
+}
+
+.waterfall img {
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        background-color: rgba(29, 3, 3, 0.404);
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        border-bottom: thin solid rgba(92, 79, 79, 0.671);
+    }
+
+    .row {
+        flex-wrap: wrap;
+    }
+}
