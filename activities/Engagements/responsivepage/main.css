@@ -40,7 +40,6 @@ nav a :hover {
 
 .waterfall {
     width: 300px;
-    height: 200px;
     border: thin solid black;
     box-shadow: 3px 3px 10px black;
 }
