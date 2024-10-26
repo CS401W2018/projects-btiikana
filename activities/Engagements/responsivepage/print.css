@@ -40,7 +40,6 @@ nav a :hover {
 
 .waterfall {
     width: 300px;
-    height: 200px;
     border: thin solid black;
     box-shadow: 3px 3px 10px black;
 }
@@ -62,7 +61,10 @@ nav a :hover {
         border-bottom: thin solid rgba(92, 79, 79, 0.671);
     }
 
-    .row {
-        flex-wrap: wrap;
+    .waterfall {
+        width: 100%;
+    }
+    .main-card {
+        order: -1;
     }
 }
