@@ -72,6 +72,12 @@ nav a :hover {
 }
 
 /* Main Style */
+
+main {
+    display: flex;
+    
+}
+
 main h3 {
     margin: 0;
 }
@@ -81,20 +87,39 @@ main hr {
     margin-right: 50px;
 }
 
+aside {
+    margin-top: 10px;
+    padding: 10px 40px;
+    color: rgb(218, 165, 32);
+    float: left;
+    border: 5px double rgba(218, 165, 32, 0.5);
+}
+
 .asidebox {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between; 
+    width: 20%;
+}
+
+.aside {
+    width: 300px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    border: thin solid black;
+    box-shadow: 3px 3px 10px black;
 }
 
 .symbolbox {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 80%;
 }
 
 .symbol {
-    width: 300px;
+    width: 33%;
     text-align: center;
     color: white;
     background-color: black;
@@ -106,7 +131,7 @@ main hr {
     width: 100%;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 700px) {
     body {
         background-color: white;
     }
@@ -132,7 +157,15 @@ main hr {
         border-bottom: 5px solid rgb(194, 30, 30);
     }
 
-    .waterfall {
+    main {
+        flex-direction: column;
+    }
+
+    .asidebox{
+        width: 100%;
+        justify-content: center;
+    }
+    .symbolbox {
         width: 100%;
         flex-direction: column;
     }

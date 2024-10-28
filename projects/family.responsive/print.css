@@ -1,21 +1,46 @@
+/* Default Style */
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: mySecondFont;
+    font-size: large;
     margin: 0;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url('Game\ of\ Thrones.ttf');
+}
+
+@font-face {
+    font-family: mySecondFont;
+    src: url('CELTG___.TTF')
 }
 
 /* Header Style */
 header {
-    background-color: blueviolet;
-    color: white;
+    font-size: x-large;
+    background-color: white;
 }
 
 header h1 {
-    margin: 0;
+    font-family: myFirstFont;
+    margin: 30px 0 0;
+    color: black;
+    background-color: white;
+    text-align: center;
+}
+
+header p {
+    font-family: mySecondFont;
+    font-size: large;
+    text-align: center;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 50px;
 }
 
 /* Navigation Style */
 nav {
-    background-color: cadetblue;
+    background-color: black;
     display: flex;
     justify-content: space-around;
 }
@@ -27,44 +52,102 @@ nav a {
     text-decoration: none;
 }
 
+.topborder {
+    border-top: 5px dashed rgb(194, 30, 30);
+}
+
+.bottomborder {
+    border-bottom: 5px dashed rgb(194, 30, 30);
+}
+
 nav a :hover {
     text-decoration: underline;
 }
 
+.current {
+    color: rgb(194, 30, 30);
+    font-weight: 800;
+    border: 10px dashed black;
+    background-color: white;
+}
+
 /* Main Style */
-.waterfallparent {
+main h3 {
+    margin: 0;
+}
+
+main hr {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.asidebox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.symbolbox {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.waterfall {
+.symbol {
     width: 300px;
+    text-align: center;
+    color: white;
+    background-color: black;
     border: thin solid black;
     box-shadow: 3px 3px 10px black;
 }
 
-.waterfall img {
+.symbol img {
     width: 100%;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 700px) {
     body {
-        background-color: rgba(29, 3, 3, 0.404);
+        background-color: white;
+    }
+
+    header h1 {
+        flex-direction: column;
+        text-align-last: center;
+    }
+
+    header p {
+        text-align: center;
     }
 
     nav {
         flex-direction: column;
     }
 
-    nav a {
-        border-bottom: thin solid rgba(92, 79, 79, 0.671);
+    nav a .topborder {
+        border-top: 5px solid rgb(194, 30, 30);
+    }
+
+    nav a .bottomborder {
+        border-bottom: 5px solid rgb(194, 30, 30);
     }
 
     .waterfall {
         width: 100%;
+        flex-direction: column;
     }
-    .main-card {
+
+    .center {
         order: -1;
     }
+
+    main hr {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+/* Footer Style */
+footer p {
+    font-family: mySecondFont;
 }
