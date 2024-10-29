@@ -121,6 +121,12 @@ figcaption {
     color: rgb(194, 30, 30);
 }
 
+.textadjustment3 {
+    font-size: x-large;
+    color: rgb(194, 30, 30);
+    margin-left: 50px;
+}
+
 .bg {
     background-image: url('targaryenbackground.jpg');
 }
@@ -208,7 +214,7 @@ figcaption {
 
 /* Main Style */
     main {
-        flex-direction: column;
+        flex-direction: column-reverse;
         margin-top: 0;
     }
 
@@ -233,7 +239,7 @@ figcaption {
 
     .symbolbox {
         width: 100%;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .symbol {
