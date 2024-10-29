@@ -72,8 +72,25 @@ nav a :hover {
 }
 
 /* Main Style */
+main {
+    display: flex;
+    margin-top: 60px;
+}
+
+main article h2 {
+    color: rgb(194, 30, 30);
+}
+
 main h3 {
     margin: 0;
+}
+
+.originimage {
+    width: 200px;
+}
+
+.originimage img {
+    width: 100%;
 }
 
 main hr {
@@ -81,23 +98,49 @@ main hr {
     margin-right: 50px;
 }
 
+aside {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 40px;
+    color: rgb(218, 165, 32);
+    float: left;
+    border: 5px double rgba(218, 165, 32, 0.5);
+}
+
+.bg {
+    background-image: url('targaryenbackground.jpg');
+}
+
 .asidebox {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between; 
+    flex-direction: row;
+    justify-content: space-between;
+    width: 20%;
+    margin-top: 6px;
+    margin-left: 20px;
+}
+
+.aside {
+    width: 80%;
+    text-align: left;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: thin solid black;
+    box-shadow: 3px 3px 10px black;
 }
 
 .symbolbox {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: row-reverse;
+    width: 80%;
+    justify-content: left;
 }
 
 .symbol {
-    width: 300px;
+    width: 33%;
     text-align: center;
     color: white;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.753);
     border: thin solid black;
     box-shadow: 3px 3px 10px black;
 }
@@ -132,7 +175,15 @@ main hr {
         border-bottom: 5px solid rgb(194, 30, 30);
     }
 
-    .waterfall {
+    main {
+        flex-direction: column;
+    }
+
+    .asidebox{
+        width: 100%;
+        justify-content: center;
+    }
+    .symbolbox {
         width: 100%;
         flex-direction: column;
     }
