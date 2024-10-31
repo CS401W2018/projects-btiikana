@@ -1,0 +1,89 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+
+/* Header Style */
+header h1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+header h2 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+/* Navigation Style */
+nav {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    display: block;
+    padding: 5px 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.current {
+    color: rgb(194, 30, 30);
+    font-weight: 800;
+    border: 10px dashed black;
+    background-color: white;
+}
+
+/* Main Style */
+main h1 {
+    margin-bottom: 80px;
+}
+.homebox {
+    display: flex;
+    margin-top: 200px 0;
+    margin-bottom: 150px;
+    border: 5px solid black;
+}
+
+.whatisitbox {
+    display: flex;
+    margin-top: 200px 0;
+    margin-bottom: 150px;
+    border: 5px solid black;
+}
+
+.typesbox {
+    display: flex;
+    margin-top: 200px 0;
+    margin-bottom: 150px;
+    border: 5px solid black;
+}
+
+.properusebox {
+    display: flex;
+    margin-top: 200px 0;
+    margin-bottom: 150px;
+    border: 5px solid black;
+}
+
+.safetybox {
+    display: flex;
+    margin-top: 200px 0;
+    margin-bottom: 150px;
+    border: 5px solid black;
+}
+
+.maintenancebox {
+    display: flex;
+    margin-top: 200px 0;
+    margin-bottom: 150px;
+    border: 5px solid black;
+}
+
+/* Footer Style */
+footer p {
+    margin-top: 100px;
+}
