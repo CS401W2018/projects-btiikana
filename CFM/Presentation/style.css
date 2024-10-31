@@ -7,7 +7,7 @@ body {
 header h1 {
     text-align: center;
     margin-top: 50px;
-    margin-bottom: 0;
+    margin-bottom: 80px;
     padding-bottom: 0;
 }
 
@@ -16,6 +16,13 @@ header h2 {
     margin-top: 10px;
     margin-bottom: 50px;
 }
+
+.overlapheadh1 {
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
 /* Navigation Style */
 nav {
     background-color: black;
@@ -24,6 +31,7 @@ nav {
 }
 
 nav a {
+    font-size: larger;
     display: block;
     padding: 5px 10px;
     color: white;
@@ -39,8 +47,29 @@ nav a {
 
 /* Main Style */
 main h1 {
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 }
+
+main h3 {
+    font-size: xx-large;
+}
+
+.slide1-5 {
+    margin-top: 50px;
+}
+
+.overlaph1 {
+    margin-bottom: auto;
+}
+
+.overlaph2 {
+    margin-top: 100px;
+}
+
+.p-adjustment {
+    font-size: larger;
+}
+
 .homebox {
     display: flex;
     margin-top: 200px 0;
