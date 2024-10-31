@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Design | Tables</title>
+    <link rel="stylesheet" href="tables.css">
+</head>
+<body>
+    <header>
+        <h1>Tables</h1>
+    </header>
+    <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </nav>
+    <main>
+        <h1>Engagement</h1>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Dept</th><th>Number</th><th>Time</th><th>Location</th><th>Credits</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th colspan="5">Computer Science</th>
+                </tr>
+                <tr>
+                    <td>CS</td><td>140</td><td>11AM</td><td rowspan="2">P2</td><td>3</td>
+                </tr>
+                <tr>
+                    <td>CS</td><td>140</td><td>11AM</td><td>3</td>
+                </tr>
+                <tr>
+                    <th colspan="5">Information Technology</th>
+                </tr>
+                <tr>
+                    <td>IT</td><td>240</td><td>2PM</td><td>P3</td><td>3</td>
+                </tr>
+                <tr>
+                    <td>IT</td><td>240</td><td>2PM</td><td>P3</td><td>3</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <th colspan="4">Total Credits</th><td>12</td>
+            </tfoot>
+        </table>
+        <h2>Notes</h2>
+        <ul>
+            <li><strong>tr tag</strong> - Separate items in the table to columns</li>
+            <li><strong>th tag</strong> - Table Header</li>
+            <li><strong>rowspan tag</strong> - when used it will interfere with a column below and a cell of the bottom column be will pushed to the right side so the bottom column <strong>td tag</strong> cell should be cleared.</li>
+            <li><strong>colspan tag</strong> - will span a cell within a column entirely but there should be 1 <strong>colspan tag</strong> in a column as it will push the other <strong>td tags</strong> aside or forward if added.</li>
+            <li><strong>theader, tbody tags</strong> - these can be used to purposefully style the contents within the table without needing to add classes individually.</li>
+            <li><strong>tfoot tag</strong> - can be used for content like a "<strong>Total</strong>" at the bottom of the table</li>
+        </ul>
+    </main>
+    <footer>
+        <p>&copy; 2024 Betero Tiikana</p>
+    </footer>
+</body>
+</html>
