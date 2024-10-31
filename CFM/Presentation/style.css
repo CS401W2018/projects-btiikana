@@ -1,6 +1,12 @@
+/* Default Style */
 body {
     font-family: 'Times New Roman', Times, serif;
     font-size: larger;
+}
+
+.center {
+    text-align: center;
+    justify-content: center;
 }
 
 /* Header Style */
@@ -54,6 +60,12 @@ main h3 {
     font-size: xx-large;
 }
 
+.list {
+    list-style-image: url('faviconx20.png');
+    margin: auto;
+    justify-content: center;
+}
+
 .slide1-5 {
     margin-top: 50px;
 }
@@ -67,14 +79,13 @@ main h3 {
 }
 
 .p-adjustment {
-    font-size: larger;
+    font-size: x-large;
 }
 
 .homebox {
     display: flex;
     margin-top: 200px 0;
     margin-bottom: 150px;
-    border: 5px solid black;
 }
 
 .whatisitbox {
@@ -112,7 +123,20 @@ main h3 {
     border: 5px solid black;
 }
 
+.videobox {
+    display: flex;
+    justify-content: center;
+    border: 5px solid black;
+    height: 500px;
+    width: 500px;
+    margin: auto;
+}
+
 /* Footer Style */
 footer p {
     margin-top: 100px;
+}
+
+.linksfooter {
+    margin-top: 320px;
 }
