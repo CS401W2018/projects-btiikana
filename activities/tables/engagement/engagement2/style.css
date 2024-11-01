@@ -1,0 +1,18 @@
+body {
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.schedule {
+    margin: 5px auto;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.schedule thead, .schedule tfoot {
+    background-color: gray;
+}
+
+.schedule tbody tr:nth-chiled(odd) {
+    background-color: white;
+}
