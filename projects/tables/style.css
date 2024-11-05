@@ -1,0 +1,250 @@
+/* Default Style */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    background: url('space.jpg');
+}
+
+/* Header Style */
+header {
+    font-size: x-large;
+    background-color: rgba(19, 18, 18, 0.651);
+}
+
+header h1 {
+    margin-bottom: 0;
+    color: rgb(206, 79, 20);
+    text-shadow: black 2px 1px;
+    text-align: center;
+}
+
+header h2 {
+    text-align: center;
+    color: purple;
+    text-shadow: gray 2px 0;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+/* Navigation Style */
+nav {
+    background-color: rgba(30, 108, 160, 0.5);
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    display: block;
+    font-weight: 900;
+    padding: 5px 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.navred {
+    color: red;
+}
+
+.navyellow {
+    color: yellow;
+}
+
+.navorange {
+    color: orange;
+}
+
+.current {
+    color: rgb(80, 14, 235);
+    font-weight: 800;
+    border: 3px solid rgb(236, 148, 46);
+    background-color: white;
+}
+/* Main Style */
+main h1 {
+    color: blueviolet;
+    text-shadow: lightskyblue 2px 0px;
+}
+
+main caption {
+    font-weight: 800;
+    font-size: x-large;
+    margin-bottom: 20px;
+    color: rgb(129, 240, 107);
+    text-shadow: black 2px 0;
+}
+
+main h4 {
+    background-color: rgb(0, 0, 0);
+    color: rgb(24, 159, 243);
+    margin-right: 160px;
+}
+
+article {
+    font-size: larger;
+    font-weight: 500;
+    margin-top: 60px;
+}
+
+.box {
+    display: flex;
+    margin-top: 60px;
+    height: 600px;
+    background-color: rgba(235, 228, 228, 0.507);
+}
+.tablebox {
+    display: flex;
+    width: 80%
+}
+
+.tablefacts {
+    margin: 5px;
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.asidebox {
+    display: flex;
+    width: 40%;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.header {
+    background-color: black;
+}
+
+thead {
+    font-size: x-large;
+    color: white;
+}
+
+.thead2 {
+    background-color: rgb(32, 29, 29);
+    color: white;
+}
+
+.thead3 {
+    background-color: rgb(68, 66, 66);
+    color: white;
+}
+
+.thead4 {
+    background-color: rgb(90, 76, 76);
+    color: white;
+}
+
+
+tbody {
+    font-size: x-large;
+}
+
+/* First Column */
+.bodyred {
+    background-color: rgb(131, 14, 14);
+    color: rgb(255, 252, 252);
+}
+
+.red1 {
+    background-color: rgb(151, 40, 40);
+}
+
+.red2 {
+    background-color: rgb(173, 49, 49);
+}
+
+.red3 {
+    background-color: rgb(173, 70, 70);
+}
+
+/* Second Column */
+.bodylightblue {
+    background-color: lightskyblue;
+    color: black;
+}
+
+.lightblue1 {
+    background-color: rgb(104, 191, 245);
+}
+
+.lightblue2 {
+    background-color: rgb(76, 182, 248);
+}
+
+.lightblue3 {
+    background-color: rgb(24, 159, 243);
+}
+
+/* Third Column */
+.bodywhite {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.white1 {
+    background-color: rgb(221, 218, 218);
+}
+
+.white2 {
+    background-color: rgb(182, 180, 180);
+}
+
+.white3 {
+    background-color: rgb(122, 121, 121);
+}
+
+/* Fourth Column */
+.bodybrown {
+    background-color: rgb(56, 31, 31);
+    color: white;
+}
+
+.brown1 {
+    background-color:rgb(49, 28, 28);
+}
+
+.brown2 {
+    background-color: rgb(82, 52, 52);
+}
+
+.brown3 {
+    background-color: rgb(107, 72, 72);
+}
+
+/* Fifth Column */
+.bodyblue {
+    background-color: blue;
+    color: white;
+}
+.blue1 {
+    background-color: rgb(20, 20, 247);
+}
+
+.blue2 {
+    background-color: rgb(42, 42, 241);
+}
+
+.blue3 {
+    background-color: rgb(71, 71, 243);
+}
+
+tfoot {
+    font-size: x-large;
+}
+
+tfoot {
+    background-color: greenyellow;
+}
+
+
+tfoot td {
+    text-align: center;
+    background-color: bisque;
+}
+
+/* Footer Style */
+footer {
+    margin-top: 200px;
+    color: white;
+    font-size: x-large;
+}
