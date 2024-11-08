@@ -1,0 +1,56 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+fieldset {
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.712);
+    background: gray;
+}
+
+legend {
+    border: thin solid black;
+    background: white;
+    padding: 10px;
+    color: black;
+}
+
+.form-row input {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.form-row input:focus {
+    background-color: white;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.form-row label {
+    width: 150px;
+    text-align: right;
+}
+
+.checked-row {
+    display: flex;
+    gap: 10px;
+}
+
+.spacer {
+    width: 150px;
+    text-align: right;
+}
+
+@media only screen and (max-width: 600px) {
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-row label {
+        text-align: left;
+    }
+}
