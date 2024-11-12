@@ -1,0 +1,230 @@
+/* Default Style */
+body {
+    font-family: myFont;
+    font-size: x-large;
+    margin: 0;
+    background: url(christmas.jpg);
+}
+
+@font-face {
+    font-family: myFont;
+    src: url('FFGoodProCond-Regular.ttf');
+}
+
+/* Header Style */
+header {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.89);
+    margin-bottom: 50px;
+    border: black solid 5px;
+    text-align: center;
+}
+
+/* Navigation Style */
+nav {
+    display: flex;
+    background: rgba(0, 0, 0, 0.767);
+    margin-top: 20px;
+    padding: 20px;
+    flex-direction: row;
+    justify-content: space-around;
+    border: black solid 5px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    color: rgb(151, 37, 132);
+}
+
+.current {
+    background-color: rgb(55, 150, 147);
+    color: black;
+    border: black 1px solid;
+}
+
+/* Main Style */
+main {
+    background-color: rgba(26, 56, 55, 0.89);
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding-bottom: 100px;
+    border: black solid 5px;
+    color: black;
+}
+
+main h1 {
+    background-color: rgba(55, 150, 147, 0.466);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: black solid 5px;
+    color: white;
+}
+
+main p {
+    color: white;
+    width: 100%;
+}
+
+legend {
+    font-weight: 800;
+    background-color: rgb(255, 255, 255);
+    border: black solid 5px;
+}
+
+
+fieldset {
+    background: rgba(55, 150, 147, 0.466);
+    font-weight: 600;
+    border: black solid 5px;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+/* Ajusting Form Inputs */
+fieldset #two {
+    margin-left: 3px;
+}
+
+fieldset #three {
+    margin-left: 35px;
+}
+
+fieldset #four {
+    margin-left: 41px;
+}
+
+fieldset #five {
+    margin-left: 8px;
+}
+
+fieldset #six {
+    margin-left: 43px;
+}
+
+fieldset #seven {
+    margin-left: 6px;
+}
+
+fieldset #eight {
+    margin-left: 1px;
+}
+
+fieldset #nine {
+    margin-left: 92px;
+}
+
+fieldset #ten {
+    margin-left: 82px;
+}
+
+.adjustment {
+    border-radius: 5px 5px;
+}
+
+.form-row input {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Footer Style */
+footer {
+    background-color: rgba(17, 17, 17, 0.884);
+    color: white;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 1px;
+    border: black solid 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    /* Media Navigation Style */ 
+    nav {
+        flex-direction: column;
+    }
+
+    nav a:hover {
+        color: rgb(235, 77, 103);
+    }
+    
+    .current {
+        background-color: rgb(55, 150, 147);
+        color: black;
+        border: black 1px solid;
+        width: 100%;
+    }
+
+    /* Media Main Style */
+    main p {
+        text-align: center;
+        width: 100%;
+    }
+
+    fieldset #one, #two, #five, #eight {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    fieldset #three {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    fieldset #four {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    fieldset #five {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    fieldset #six {
+        display: flex;
+        flex-direction: row;
+        margin-left: 0;
+    }
+
+    fieldset #seven {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    fieldset #nine {
+        margin-left: 0;
+    }
+
+    fieldset #ten {
+        margin-top: 30px;
+        margin-left: 0;
+        border-radius: 6px 6px;
+    }
+
+    .form-row {
+        flex-direction: row;
+    }
+
+    .form-row label {
+        text-align: left;
+    }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" media="screen">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Family Christmas Party</title>
+</head>
+<body>
+    <header>
+        <h1>Family Christmas Party</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">What to bring?</a>
+        <a href="#">Party Location</a>
+        <a href="#">Activities</a>
+        <a href="#" class="current">Who's Coming</a>
+    </nav>
+    <main>
+        <h1>Who's Coming Form</h1>
+        <p>Please make sure to fill out everything and choose a team for the party activities. Your email or phone number along with password is required to save your information and notify you of any party changes. For questions, write them in the comment section below. Thank you!</p>
+        <form action="processing.html" method="post">
+            <fieldset>
+                <legend>Fill Here</legend>
+                <div class="form-row" id="one">
+                    <label for="first">First Name:</label>
+                    <input type="text" id="first" name="first" placeholder="John">
+                </div>
+                <div class="form-row" id="two">
+                    <label for="last">Last Name:</label>
+                    <input type="text" id="last" name="last" placeholder="Doe">
+                </div>
+                <div class="form-row" id="three">
+                    <label for="phone">Phone: </label>
+                    <input type="tel" id="phone" name="phone" placeholder="(800)111-1111">
+                </div>
+                <div class="form-row" id="four">
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email" placeholder="jdoe@email.com">
+                </div>
+                <div class="form-row" id="five">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="********">
+                </div>
+                <div class="form-row" id="six">
+                    Team: 
+                        <label><input type="radio" name="class" value="white">White</label>
+                        <label><input type="radio" name="class" value="red">Red</label>
+                        <label><input type="radio" name="class" value="green" checked>Green</label>
+                </div>
+                <div class="form-row" id="seven">
+                    <label for="residence">Residence: </label>
+                    <select name="residence" id="residence" class="adjustment">
+                        <option value="hi">Hawaii</option>
+                        <option value="ut">California</option>
+                        <option value="ut">Utah</option>
+                        <option value="wa" selected>Washington</option>
+                    </select>
+                </div>
+                <div class="form-row" id="eight">
+                    <label for="comments">Comments: </label>
+                    <textarea name="comments" id="comments" class="adjustment" placeholder="type here.."></textarea>
+                </div>
+                <div class="form-row" id="nine">
+                    <label for="confirm" class="adjustment2">
+                    <input type="checkbox" id="confirm" name="confirm" value="confirm">I am attending the party.</label>
+                </div>
+                <div class="form-row adjustments" id="ten">
+                    <div class="spacer"></div>
+                    <input type="submit" value="Confirm!">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Betero Tiikana</p>
+    </footer>
+</body>
+</html>
