@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Design | Form 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Web Design</h1>
+        <h3>Form</h3>
+    </header>
+    <nav>
+        <a href="">Link</a>
+        <a href="">link</a>
+        <a href="">link</a>
+    </nav>
+    <main>
+        <h1>Activity: Form</h1>
+        <form action="processing.html" method="post" id="myForm">
+            <fieldset>
+                <legend>Sign Up</legend>
+                <div class="form-row">
+                    <label for="firstName">First Name:</label>
+                    <input id="firstName" type="text" name="first" placeholder="John">
+                </div>
+                <div class="form-row">
+                    <label for="lastName">Last Name:</label>
+                    <input id="lastName" type="text" name="last" placeholder="Doe">
+                </div>
+                <div class="form-row">
+                    <label for="password">Password:</label>
+                    <input id="password" type="password" name="pass">
+                </div>
+                <div class="form-row">
+                    <label for="checkbox">
+                    <input type="checkbox" name="remember">
+                    Remember Me
+                    </label>
+                </div>
+                <div>
+                    State
+                    <select name="state" id="state">
+                        <option value="HI">Hawaii</option>
+                        <option value="UT">Utah</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="comments">Comments</label>
+                    <textarea name="comments" id="comments"></textarea>
+                </div>
+                <div class="check-row">
+                    Class:
+                    <label for="state" type="spacer"></label>
+                    <label><input type="radio" name="class" value="freshman">Freshman</label>
+                    <label><input type="radio" name="class" value="sophomore">Sophomore</label>
+                </div>
+                <div class="form-row">
+                    <div class="spacer"></div>
+                    <input type="Submit">
+                </div>
+            </fieldset>
+        </form>
+        <h3>Notes</h3>
+        <li>Suns micro systems - Firefox</li>
+        <li>Suns micro systems - Java</li>
+        <li>Node js - helps run javascript on your computer instead of the browser</li>
+        <li>Meta - React and React Native for mobile</li>
+        <h3>Questions</h3>
+        <h4>What is JavaScript? How did it get its name?</h4>
+        <li>Javascript is one of the programming languages that started along time ago back in the 1990s. The company that invented it named javascript to bring up the back end name.</li>
+        <h4>What are the two ways you can run JavaScript?</h4>
+        <li>It runs in the browser (in the DOCUMENT OBJECT MODEL), and in the NODE JS.</li>
+        <h4>What was the most popular front-end js library?</h4>
+        <li>J.Query was the most popular front-end js library.</li>
+        <h4>What is the most popular front-end js library today?</h4>
+        <li>React Native is the most popular front-end js library today.</li>
+    </main>
+    <footer>
+        <p>&copy; 2024 Betero Tiikana</p>
+    </footer>
+    <script>
+        document.getElementById('myForm').addEventListener('submit',function(event) {
+            event.preventDefault();
+            const firtsName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            const formData = {
+                firstName: firstname,
+                lastName: lastname
+            }
+            if (!firstName || !lastName) {
+                alert("First name and last name required");
+                return;
+            }
+            if (!age || age <18) {
+                alert("You must be 18 to sign up");
+                return;
+            }
+            console.log(formData);
+            alert("You submitted the form!")
+        })
+    </script>
+</body>
+</html>
