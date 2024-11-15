@@ -18,6 +18,7 @@ nav a {
 }
 .headerbox {
     display: flex;
+    width: 100%;
     border: 2px black solid;
     background: black;
 }
@@ -62,4 +63,40 @@ nav a {
     margin-top: 28px;
     font-size: larger;
     color: white;
+}
+
+@media only screen and (max-width: 700px) {
+    .headerbox {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        flex-direction: row;
+        border: 2px solid red;
+    }
+
+    .title {
+        width: 60%;
+        order: -1;
+    }
+
+    .links {
+        margin: auto;
+        width: 90%;
+        order: 1;
+        gap: px;
+        font-size: small
+    }
+
+    .photo {
+        width: 20%;
+        order: -1;
+        margin-right: 0;
+        justify-content: flex-end;
+    }
+
+    .photo img {
+        margin: auto;
+        width: 50px;
+        height: 50px;
+    }
 }
