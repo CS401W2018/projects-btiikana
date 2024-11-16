@@ -1,0 +1,53 @@
+/* Default Style */
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    background-color: skyblue;
+}
+
+/* Header Style and Navigation */
+header {
+    color: yellow;
+}
+
+nav {
+    font-size: larger;
+    font-weight: 600;
+}
+
+nav a {
+    color: yellow;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: red;
+}
+
+.current {
+    background: skyblue;
+    border-radius: 5px;
+    color: black;
+    border: black solid;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    background: purple;
+    color: white;
+}
+
+.header-title {
+    display: flex;
+    width: 30%;
+}
+
+.nav-links {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    justify-content: space-around;
+}
+
+/* Main Style */

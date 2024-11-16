@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Processing - Ajax</title>
+</head>
+<body>
+    <div class="box">
+        <header class="header-title">
+            <h1>Form Processing</h1>
+        </header>
+        <nav class="nav-links">
+            <a href="#" >Form</a>
+            <a href="#" >Form Java</a>
+            <a href="#" class="current">Form Ajax</a>
+        </nav>
+    </div>
+    <main>
+        <h1>Ajax</h1>
+        <form action="processing.html" method="post" id="myForm">
+            <fieldset>
+                <legend>Sign Up</legend>
+                <div class="form-row">
+                    <label for="firstName">First Name:</label>
+                    <input id="firstName" type="text" name="first" placeholder="John">
+                </div>
+                <div class="form-row">
+                    <label for="lastName">Last Name:</label>
+                    <input id="lastName" type="text" name="last" placeholder="Doe">
+                </div>
+                <div class="form-row">
+                    <label for="password">Password:</label>
+                    <input id="password" type="password" name="pass">
+                </div>
+                <div class="form-row">
+                    <label for="checkbox">
+                    <input type="checkbox" name="remember">
+                    Remember Me
+                    </label>
+                </div>
+                <div>
+                    State
+                    <select name="state" id="state">
+                        <option value="HI">Hawaii</option>
+                        <option value="UT">Utah</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="comments">Comments</label>
+                    <textarea name="comments" id="comments"></textarea>
+                </div>
+                <div class="check-row">
+                    Class:
+                    <label for="state" type="spacer"></label>
+                    <label><input type="radio" name="class" value="freshman">Freshman</label>
+                    <label><input type="radio" name="class" value="sophomore">Sophomore</label>
+                </div>
+                <div class="form-row">
+                    <div class="spacer"></div>
+                    <input type="Submit">
+                </div>
+            </fieldset>
+        </form>
+        <li>Meta - React and React Native for mobile</li>
+        <h3>Questions</h3>
+        <h4>What is AJAX?</h4>
+        <li>It's another web development technology that make web application more responsive to users.</li>
+        <h4>Why do you put your JS Code in a separate file?</h4>
+        <li>It is always a good idea to separate them in folder so that it is easier to manage, access, read and avoid mistakes.</li>
+    </main>
+    <footer>
+        <p>&copy; 2024 Betero Tiikana</p>
+    </footer>
+    <script>
+        document.getElementById('myForm').addEventListener('submit',function(event) {
+            event.preventDefault();
+            const firtsName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            const formData = {
+                firstName: firstname,
+                lastName: lastname
+            }
+            if (!firstName || !lastName) {
+                alert("First name and last name required");
+                return;
+            }
+            if (!age || age <18) {
+                alert("You must be 18 to sign up");
+                return;
+            }
+            const xhr = new XMLHttpRequest();
+            xhr.open("POST", "submit.json", true);
+            xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+            
+
+            console.log(formData);
+            alert("You submitted the form!")
+        })
+    </script>
+</body>
+</html>
