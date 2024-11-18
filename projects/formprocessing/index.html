@@ -17,17 +17,59 @@
             <a href="#" class="links-row">HOME</a>
             <a href="#" class="links-row">SCHEDULES</a>
             <a href="#" class="links-row">PROGRAMS</a>
-            <a href="#" class="links-row">MEMBERSHIP</a>
+            <a href="#" class="links-row current">MEMBERSHIP</a>
             <a href="#" class="links-row">ABOUT US</a>
         </nav>
         <figure class="photo">
-            <img src="retroneon.png" alt="Weights">
+            <a href="#"><img src="retroneon.png" alt="Weights"></a>
         </figure>
     </div>
     <main>
         <h1>MEMBERSHIP</h1>
-        <form action="">
-            <label for=""></label>
+        <form action="processing.html" method="post">
+            <fieldset>
+                <legend>Sign Up</legend>
+                    <div>
+                        <div class="form-row" id="one">
+                            <label for="first">First Name:</label>
+                            <input type="text" id="first" name="first" placeholder="Betero">
+                        </div>
+                        <div class="form-row" id="two">
+                            <label for="last">Last Name:</label>
+                            <input type="text" id="last" name="last" placeholder="Tiikana">
+                        </div>
+                        <div class="form-row" id="three">
+                            <label for="phone">Phone: </label>
+                            <input type="tel" id="phone" name="phone" placeholder="(800)111-1111">
+                        </div>
+                        <div class="form-row" id="four">
+                            <label for="email">Email: </label>
+                            <input type="email" id="email" name="email" placeholder="jdoe@email.com">
+                        </div>
+                        <div class="form-row" id="five">
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="password" placeholder="********">
+                        </div>
+                        <div class="form-row" id="seven">
+                            <label for="residence">Residence: </label>
+                            <select name="residence" id="residence" class="adjustment">
+                                <option value="residence" selected>...</option>
+                                <option value="hi">Aie</option>
+                                <option value="ut">Honolulu</option>
+                                <option value="ut">Kaneohe</option>
+                                <option value="wa">Laie</option>
+                            </select>
+                        </div>
+                        <div class="form-row" id="nine">
+                            <label for="confirm" class="adjustment2">
+                            <input type="checkbox" id="confirm" name="confirm" value="confirm">I agree to sign up and opt-in newsletter.</label>
+                        </div>
+                        <div id="ten">
+                            <div class="spacer"></div>
+                            <input class="adjustment3" type="submit" value="Submit Now!">
+                        </div>
+                    </div>
+            </fieldset>
         </form>
     </main>
     <footer>

@@ -3,6 +3,9 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: medium;
     margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Header and Navigation Style */
@@ -16,10 +19,14 @@ header {
 nav a {
     text-decoration: none;
 }
+
+nav a:hover {
+    color: goldenrod;
+}
+
 .headerbox {
     display: flex;
     width: 100%;
-    border: 2px black solid;
     background: black;
 }
 
@@ -28,7 +35,6 @@ nav a {
     margin-left: 10px;
     margin-top: 20px;
     width: 20%;
-    border: 2px solid white;
 }
 
 .links {
@@ -36,16 +42,15 @@ nav a {
     margin-left: 50px;
     margin-top: 20px;
     width: 70%;
-    border: 2px solid white;
     flex-direction: row;
-    justify-content: center;
     gap: 20px;
+    justify-content: space-around;
 }
 
 .photo {
     display: flex;
     width: 10%;
-    border: 2px solid white;
+    justify-content: flex-end;
 }
 
 .photo img {
@@ -56,8 +61,6 @@ nav a {
     height: 100px;
 }
 
-
-
 .links-row {
     display: flex;
     margin-top: 28px;
@@ -65,13 +68,170 @@ nav a {
     color: white;
 }
 
+.current {
+    background-color: goldenrod;
+    height: 24px;
+    border: goldenrod 8px solid;
+    color: black;
+    border-radius: 20px 20px;
+
+}
+
+/* Main Style */
+legend {
+    font-weight: 800;
+    background-color: gold;
+    border: black solid 5px;
+    color: black;
+}
+
+
+fieldset {
+    background: rgba(184, 136, 16, 0.986);
+    font-weight: 600;
+    border: black solid 5px;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 20px;
+    margin-top: auto;
+}
+
+/* Ajusting Form Inputs */
+fieldset #two {
+    margin-left: 3px;
+}
+
+fieldset #three {
+    margin-left: 30px;
+}
+
+fieldset #four {
+    margin-left: 36px;
+}
+
+fieldset #five {
+    margin-left: 9px;
+}
+
+fieldset #six {
+    margin-left: 37px;
+}
+
+fieldset #seven {
+    margin-left: 5px;
+}
+
+fieldset #eight {
+    margin-left: 1px;
+}
+
+fieldset #nine {
+    margin-left: 82px;
+}
+
+fieldset #ten {
+    display: flex;
+    flex-direction: row-reverse
+}
+
+.adjustment3 {
+    display: flex;
+    margin-top: 30px;
+    border-radius: 5px 5px;
+    border: 1px black solid;
+    margin-left: 84px;
+}
+
+.form-row input {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Footer Style */
+footer {
+    background-color: rgba(17, 17, 17, 0.884);
+    color: white;
+    margin-top: auto;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 1px;
+    border: black solid 5px;
+}
+
 @media only screen and (max-width: 700px) {
+    nav a {
+        margin-bottom: 10px;
+    }
+
+    fieldset #one, #two, #five, #eight {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    fieldset #three {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    fieldset #four {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    fieldset #five {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    fieldset #six {
+        display: flex;
+        flex-direction: row;
+        margin-left: 0;
+    }
+
+    fieldset #seven {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    fieldset #nine {
+        margin-left: 0;
+    }
+
+    fieldset #ten {
+        margin-top: 30px;
+        margin-left: 0;
+        border-radius: 6px 6px;
+    }
+
+    .form-row {
+        flex-direction: row;
+    }
+
+    .form-row label {
+        text-align: left;
+    }
+
     .headerbox {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
         flex-direction: row;
-        border: 2px solid red;
     }
 
     .title {
@@ -89,8 +249,8 @@ nav a {
 
     .photo {
         width: 20%;
+        margin-top: 40px;
         order: -1;
-        margin-right: 0;
         justify-content: flex-end;
     }
 
@@ -98,5 +258,13 @@ nav a {
         margin: auto;
         width: 50px;
         height: 50px;
+    }
+
+    .adjustment3 {
+        display: flex;
+        margin-top: 10px;
+        border-radius: 5px 5px;
+        border: 1px black solid;
+        margin-left: 3px;
     }
 }
