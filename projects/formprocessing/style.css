@@ -68,7 +68,6 @@ nav a {
 .current {
     background-color: goldenrod;
     height: 24px;
-    border: goldenrod 8px solid;
     color: black;
     border-radius: 20px 20px;
 
@@ -177,7 +176,6 @@ footer {
     padding: 1px;
     color: white;
     font-size: larger;
-    border: black solid 5px;
 }
 
 @media only screen and (max-width: 700px) {
@@ -273,7 +271,6 @@ footer {
         margin: auto;
         width: 90%;
         order: 1;
-        gap: px;
         font-size: small
     }
 
