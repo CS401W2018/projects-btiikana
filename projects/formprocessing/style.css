@@ -6,6 +6,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: rgb(128, 128, 128);
 }
 
 /* Header and Navigation Style */
@@ -92,6 +93,12 @@ fieldset {
     margin-top: auto;
 }
 
+.decorate {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
 /* Ajusting Form Inputs */
 fieldset #two {
     margin-left: 3px;
@@ -117,6 +124,10 @@ fieldset #seven {
     margin-left: 5px;
 }
 
+fieldset #residence {
+    border-radius: 5px;
+}
+
 fieldset #eight {
     margin-left: 1px;
 }
@@ -130,21 +141,27 @@ fieldset #ten {
     flex-direction: row-reverse
 }
 
+fieldset #eleven {
+    display: flex;
+    margin-left: 49px;
+}
+
 .adjustment3 {
     display: flex;
     margin-top: 30px;
     border-radius: 5px 5px;
     border: 1px black solid;
     margin-left: 84px;
+    font-weight: 600;
 }
 
-.form-row input {
+.signup-row input {
     padding: 5px;
     border-radius: 5px;
     background-color: white;
 }
 
-.form-row {
+.signup-row {
     display: flex;
     gap: 10px;
     margin-top: 10px;
@@ -152,12 +169,14 @@ fieldset #ten {
 
 /* Footer Style */
 footer {
-    background-color: rgba(17, 17, 17, 0.884);
+    background-color: black;
     color: white;
     margin-top: auto;
     margin-left: 0;
     margin-right: 0;
     padding: 1px;
+    color: white;
+    font-size: larger;
     border: black solid 5px;
 }
 
@@ -166,10 +185,14 @@ footer {
         margin-bottom: 10px;
     }
 
-    fieldset #one, #two, #five, #eight {
+    fieldset #one, #two, #five, #eight{
         display: flex;
         flex-direction: column;
         width: 100%;
+        margin-left: 0;
+    }
+
+    fieldset #two {
         margin-left: 0;
     }
 
@@ -205,6 +228,11 @@ footer {
         margin-left: 0;
     }
 
+    fieldset #residence {
+        border-radius: 5px;
+    }
+
+
     fieldset #nine {
         margin-left: 0;
     }
@@ -215,11 +243,17 @@ footer {
         border-radius: 6px 6px;
     }
 
-    .form-row {
+    fieldset #eleven {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .signup-row {
         flex-direction: row;
     }
 
-    .form-row label {
+    .signup-row label {
         text-align: left;
     }
 

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" media="screen">
     <link rel="stylesheet" href="style.css">
-    <link rel="ico" href="favico.icon" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <title>MEMBERSHIP - myFitFORCE</title>
 </head>
 <body>
@@ -26,43 +26,48 @@
     </div>
     <main>
         <h1>MEMBERSHIP</h1>
-        <form action="processing.html" method="post">
+        <div id="message"></div>
+        <form action="processing.html" method="GET" id="signup-form">
             <fieldset>
                 <legend>Sign Up</legend>
                     <div>
-                        <div class="form-row" id="one">
+                        <div class="signup-row" id="one">
                             <label for="first">First Name:</label>
                             <input type="text" id="first" name="first" placeholder="Betero">
                         </div>
-                        <div class="form-row" id="two">
+                        <div class="signup-row" id="two">
                             <label for="last">Last Name:</label>
                             <input type="text" id="last" name="last" placeholder="Tiikana">
                         </div>
-                        <div class="form-row" id="three">
+                        <div class="signup-row" id="eleven">
+                            <label for="age">Age: </label>
+                            <input type="number" id="age" name="age" placeholder="Must be 18+">
+                        </div>
+                        <div class="signup-row" id="three">
                             <label for="phone">Phone: </label>
-                            <input type="tel" id="phone" name="phone" placeholder="(800)111-1111">
+                            <input type="tel" id="phone" name="phone" placeholder="(000)000-0000">
                         </div>
-                        <div class="form-row" id="four">
+                        <div class="signup-row" id="four">
                             <label for="email">Email: </label>
-                            <input type="email" id="email" name="email" placeholder="jdoe@email.com">
+                            <input type="email" id="email" name="email" placeholder="user@email.com">
                         </div>
-                        <div class="form-row" id="five">
+                        <div class="signup-row" id="five">
                             <label for="password">Password:</label>
                             <input type="password" id="password" name="password" placeholder="********">
                         </div>
-                        <div class="form-row" id="seven">
+                        <div class="signup-row" id="seven">
                             <label for="residence">Residence: </label>
                             <select name="residence" id="residence" class="adjustment">
                                 <option value="residence" selected>...</option>
-                                <option value="hi">Aie</option>
-                                <option value="ut">Honolulu</option>
-                                <option value="ut">Kaneohe</option>
-                                <option value="wa">Laie</option>
+                                <option value="aiea">Aiea</option>
+                                <option value="Honolulu">Honolulu</option>
+                                <option value="kaneohe">Kaneohe</option>
+                                <option value="laie">Laie</option>
                             </select>
                         </div>
-                        <div class="form-row" id="nine">
-                            <label for="confirm" class="adjustment2">
-                            <input type="checkbox" id="confirm" name="confirm" value="confirm">I agree to sign up and opt-in newsletter.</label>
+                        <div class="signup-row" id="nine">
+                            <label for="agree" class="adjustment2">
+                            <input type="checkbox" id="agree" name="agree" value="agreed">I agree to sign up and opt-in newsletter.</label>
                         </div>
                         <div id="ten">
                             <div class="spacer"></div>
@@ -75,5 +80,6 @@
     <footer>
         <p>Copyright &copy; 2024 Betero Tiikana</p>
     </footer>
+    <script src="signup-form.js"></script>
 </body>
 </html>
