@@ -20,6 +20,26 @@ document.getElementById("signup-form").addEventListener("submit", function(event
         return;
     }
 
+    if (!phone) {
+        alert("Your phone number is required");
+        return;
+    }
+
+    if (!email) {
+        alert("Your email is required.");
+        return;
+    }
+
+    if (!password) {
+        alert("You must provide a password");
+        return;
+    }
+
+    if (!residence) {
+        alert("You must choose a Residence");
+        return;
+    }
+
 /* Consolidate Values */
     const data = {
         first: first,
