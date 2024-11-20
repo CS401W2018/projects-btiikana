@@ -1,0 +1,20 @@
+body {
+    font-size: large;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+}
+
+.audio {
+    display: flex;
+}
+
+.video {
+    display: flex;
+}
+
+.youtube {
+    display: flex;
+}
