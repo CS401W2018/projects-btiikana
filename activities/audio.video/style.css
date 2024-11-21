@@ -1,7 +1,9 @@
+/* Default Style */
 body {
     font-size: large;
 }
 
+/* Main Style */
 .box {
     display: flex;
     flex-direction: column;
@@ -17,4 +19,32 @@ body {
 
 .youtube {
     display: flex;
+}
+
+.btn {
+    display: block;
+    padding: 10px;
+    color: gold;
+    background-color: black;
+    width: 110px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 2s ease-in-out;
+}
+
+.button:hover {
+    background-color: goldenrod;
+    color: black;
+}
+
+#germany {
+    width: 350px;
+    margin: 30px 50px;
+    border: thin solid black;
+    box-shadow: 5px 5px 3px rgba(200, 200, 200, 50%);
+    transform: rotate(50deg);
+}
+
+#germany img {
+    width: 100%;
 }
