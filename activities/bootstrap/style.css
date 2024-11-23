@@ -2,9 +2,10 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
     font-size: large;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
-
-/* Header Style */
 
 /* Navigation Style */
 nav {
@@ -21,7 +22,6 @@ nav a {
     flex-direction: row;
     background-color: aqua;
     padding: 15px;
-    margin: 0;
 }
 
 .nav {
@@ -36,4 +36,9 @@ nav a {
     flex-direction: row-reverse;
 }
 
-/* Main Style */
+/* Footer Style */
+footer {
+    margin-top: auto;
+    background-color: aqua;
+    padding: 10px;
+}
