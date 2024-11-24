@@ -1,52 +1,174 @@
 /* Default Style */
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: medium;
+    font-family: headerFont;
+    font-size: large;
     margin: 0;
-    color: black;
+    color: rgba(129, 245, 106, 0.979);
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    min-height: 100vh;
+}
+
+@font-face {
+    font-family: headerFont;
+    src: url(JH_FALLOUT.TTF);
+}
+
+.inkStyle {
+    font-family: headerFont;
+}
+
+.decoration {
+    height: 90px;
+    background-color: white;
 }
 
 /* Header Style */
-.headerbox {
+.box {
     display: flex;
-    width: 30%;
-    border: red 2px solid;
-    margin-left: 10px;
-    color: white;
+    flex-direction: row;
+    background-color: white;
+    width: 100%;
+    border-top: 3px rgba(129, 245, 106, 0.979) solid;
+    border-bottom: 3px rgba(129, 245, 106, 0.979) solid;
+    border-style: double;
+    background-color: black;
 }
 
 /* Navigation Style */
 nav a {
     text-decoration: none;
-    color: white;
+    color: rgba(129, 245, 106, 0.979);
 }
 
 .nav {
     display: flex;
     width: 70%;
-    border: red 2px solid;
-    font-size: large;
+    font-size: larger;
     font-weight: 700;
+}
+
+.headerbox {
+    display: flex;
+    width: 30%;
+    margin-left: 10px;
 }
 
 .links {
     display: flex;
     flex-direction: row;
-    gap: 100px;
+    gap: 80px;
     margin: auto;
 }
 
 /* Main Style */
-.box {
+.spacer {
+    display: flex;
+    padding: 20px;
+}
+
+.text-spacer {
+    display: flex;
+    padding: 5px;
+}
+
+.mainbox {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main - What are Futures */
+.mainbox4-products {
+    display: flex;
+    flex-direction: column;
+    min-height: 68vh;
+    border: rgba(129, 245, 106, 0.979) double;
+}
+
+.products {
     display: flex;
     flex-direction: row;
-    background-color: white;
-    border: 2px solid black;
-    width: 100%;
-    background-color: rgba(57, 131, 241, 0.575);
+    justify-content: space-around;
+}
+
+.products figure {
+    height: 500px;
+    width: 400px;
+    border: 2px rgba(129, 245, 106, 0.979) dashed;
+}
+
+/* Main - Levels of Trading */
+.levelsbox {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: black double;
+    min-height: 68vh;
+}
+
+.levels {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.levels figure {
+    height: 500px;
+    width: 400px;
+    border: 2px black dashed;
+}
+
+.levels img {
+    height: 500px;
+    width: 400px;   
+}
+
+.levels aside {
+    height: 500px;
+    width: 200px;
+}
+
+/* Main - Where to find Futures */
+aside {
+    margin-top: 15px;
+    height: 300px;
+    width: 250px;
+}
+
+.wherebox {
+    display: flex;
+    flex-direction: column;
+    min-height: 60vh;
+    border: rgba(129, 245, 106, 0.979) double;
+}
+
+.wherebox figure {
+    height: 500px;
+    width: 400px;
+    border: 2px rgba(129, 245, 106, 0.979) dashed;    
+}
+
+.wherebox img {
+    height: 500px;
+    width: 400px;   
+}
+
+.platforms {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    justify-content: space-around;
 }
 
 /* Footer Style */
-
+footer {
+    padding: 10px;
+    border-top: 3px rgba(129, 245, 106, 0.979) solid;
+    border-bottom: 3px rgba(129, 245, 106, 0.979) solid;
+    border-style: double;
+    margin-top: auto;
+}
 
 /* Mobile Viewport Style */
