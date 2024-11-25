@@ -1,0 +1,19 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nav {
+    display: block;
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.decoration {
+    padding: 10px;
+    border: black 2px solid;
+    margin: auto;
+}
