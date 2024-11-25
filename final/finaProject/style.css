@@ -42,6 +42,10 @@ nav a {
     color: rgba(129, 245, 106, 0.979);
 }
 
+nav a:hover {
+    color: white;
+}
+
 .nav {
     display: flex;
     width: 70%;
@@ -161,6 +165,98 @@ aside {
     margin-top: 40px;
     justify-content: space-around;
 }
+
+/* Main - Contact */
+.mainbox4-contact {
+    display: flex;
+    flex-direction: column;
+    border: rgba(129, 245, 106, 0.979) double;
+}
+
+.mainbox4-contact2 {
+    display: flex;
+    flex-direction: column;
+    min-height: 50vh;
+    border: rgba(129, 245, 106, 0.979) double;
+    background-color: black;
+}
+
+/* Main - Contact: About me */
+.fieldset-mainBox {
+    background-color: black;
+}
+
+.spacer-contact {
+    display: flex;
+    padding: 20px;
+    background-color: white;
+}
+
+/* Main - Contact: Form */
+fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 5px black dashed;
+    margin-top: 100px;
+    color: black;
+    background-color: rgba(129, 245, 106, 0.979);
+}
+
+fieldset input {
+    background-color: black;
+    border: rgba(129, 245, 106, 0.979) 2px dashed;
+    height: 24px;
+    color: white;
+    font-size: medium;
+    font-family: headerFont;
+    border-radius: 5px 5px;
+}
+
+#button {
+    width: 140px;
+    height: 40px;
+    text-align: center;
+    font-family: headerFont;
+}
+
+fieldset #one {
+    margin-right: 66px;
+}
+
+fieldset #two {
+    margin-left: 5px; 
+}
+
+fieldset #three {
+    margin-left: 82px;
+}
+
+fieldset #four {
+    margin-left: 156px;
+}
+
+fieldset #five {
+    margin-left: 159px;
+}
+
+legend {
+    border: rgba(129, 245, 106, 0.979) dashed;
+    padding: 10px;
+    margin-left: 158px;
+    background-color: black;
+    color: rgba(129, 245, 106, 0.979);
+}
+
+.fieldset-spacer {
+    padding: 10px;
+}
+
+.submit-spacer {
+    display: flex;
+    padding: 10px;
+}
+
 
 /* Footer Style */
 footer {
