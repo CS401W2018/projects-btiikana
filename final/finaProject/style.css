@@ -25,6 +25,10 @@ body {
 }
 
 /* Header Style */
+.current {
+    border: 2px green solid;
+}
+
 .box {
     display: flex;
     flex-direction: row;
@@ -66,7 +70,7 @@ nav a:hover {
     margin: auto;
 }
 
-/* Main Style */
+/* Main - Futures */
 .spacer {
     display: flex;
     padding: 20px;
@@ -164,6 +168,84 @@ aside {
     flex-direction: row;
     margin-top: 40px;
     justify-content: space-around;
+}
+
+/* Main - Mindset */
+#disclaimer {
+    color: red;
+}
+
+/* Main - Platforms */
+.mainbox-platforms {
+    display: flex;
+    flex-direction: column;
+    min-height: 68vh;
+    border: rgba(129, 245, 106, 0.979) double;
+}
+
+.mainbox-platforms2 {
+    display: flex;
+    flex-direction: column;
+    min-height: 68vh;
+    border: black double;
+    color: black;
+    background-color: white;
+}
+
+.mainbox-platforms3 {
+    display: flex;
+    flex-direction: row;
+    min-height: 75vh;
+    border: rgba(129, 245, 106, 0.979) double;
+    gap: 100px;
+}
+
+.platform-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.platform-images figure {
+    display: flex;
+    flex-direction: column;
+    border: black dashed;
+    height: 500px;
+    width: 500px;
+}
+
+.platform-images img {
+    height: 500px;
+    width: 500px;
+}
+
+strong {
+    color: white;
+}
+
+/* Main - Platforms: Table */
+caption {
+    padding: 20px;
+    color: white;
+}
+
+.tableAside {
+    margin-top: 32px;
+}
+
+.table {
+    display: flex;
+    width: 70%;
+    justify-content: flex-end;
+}
+
+th {
+    background-color: rgb(66, 62, 62);
+}
+
+tfoot td {
+    background-color: rgb(66, 62, 62);
+    text-align: right;
 }
 
 /* Main - Contact */
@@ -268,3 +350,50 @@ footer {
 }
 
 /* Mobile Viewport Style */
+@media screen and (max-width: 800px)
+{
+    /* Default Style */
+    body {
+        font-size: medium;
+    }
+    .box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .links {
+        flex-direction: column;
+        gap: 15px;
+        margin: 0;
+    }
+
+    .current {
+        margin: 0;
+    }
+
+    .nav {
+        flex-direction: column;
+    }
+    /* Platforms */
+    .mainbox-platforms3{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .tableAside {
+        display: block;
+        height: 50px;
+        width: 100%;
+    }
+
+    .platform-images {
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .table {
+        margin: auto;
+        width: 100%;
+    }
+
+}
