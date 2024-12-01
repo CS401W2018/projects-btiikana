@@ -272,11 +272,21 @@ caption {
     margin-top: 32px;
 }
 
+.asideAdjust {
+    margin-top: 90px;
+}
+
 .table {
     display: flex;
     width: 70%;
     justify-content: flex-end;
     margin-bottom: 20px;
+}
+
+.table-content {
+    width: 100%;
+    height: 700px;
+    margin: auto;
 }
 
 th {
@@ -492,47 +502,43 @@ footer {
     /* Platforms - Table Style */
     .mainbox-platforms3{
         flex-direction: column;
-        min-height: 200vh;
         gap: 10px;
     }
 
     .table {
         border: 3px white solid;
         margin: auto;
-        width: 100%;
-        flex-wrap: nowrap;
+        width: auto;
     }
 
     .table-content {
         width: auto;
         border: red 2px solid;
-        flex-wrap: wrap;
-        margin: auto;
     }
 
     /* THead */
     thead {
-        width: 100%;
+        width: auto;
     }
 
-    th {
+    thead th {
         border: 3px solid white;
         width: auto;
     }
 
     /* TBody */ 
     tbody {
-        width: 100%;
+        width: auto;
     }
 
     td {
         border: yellow 2px solid;
-        width: auto;
+
     }
 
     /* TFoot */
     tfoot {
-        width: 100%;
+        width: auto;
     }
 
     tfoot th {
