@@ -33,7 +33,7 @@ body {
     display: flex;
     flex-direction: row;
     background-color: white;
-    width: 100%;
+    width: auto;
     border-top: 3px rgba(129, 245, 106, 0.979) solid;
     border-bottom: 3px rgba(129, 245, 106, 0.979) solid;
     border-style: double;
@@ -175,6 +175,45 @@ aside {
     color: red;
 }
 
+.challengeBox {
+    display: flex;
+    flex-direction: row;
+}
+
+.block {
+    display: block;
+    width: 70%;
+}
+
+.challengeBox figure {
+    width: 30%;
+}
+
+.challengeBox img {
+    width: 100%;
+    height: 100%;
+}
+
+.overcomeBox {
+    display: flex;
+    flex-direction: row;
+}
+
+.block2 {
+    display: block;
+    width: 70%;
+}
+
+.overcomeBox figure {
+    width: 30%;
+}
+
+.overcomeBox img {
+    width: 100%;
+    height: 500px;
+    margin-top: 90px;
+}
+
 /* Main - Platforms */
 .mainbox-platforms {
     display: flex;
@@ -216,7 +255,7 @@ aside {
 
 .platform-images img {
     height: 500px;
-    width: 500px;
+    width: 100%;
 }
 
 strong {
@@ -264,10 +303,6 @@ tfoot td {
 }
 
 /* Main - Contact: About me */
-.fieldset-mainBox {
-    background-color: black;
-}
-
 .spacer-contact {
     display: flex;
     padding: 20px;
@@ -322,12 +357,23 @@ fieldset #five {
     margin-left: 159px;
 }
 
+fieldset #six {
+    margin-left: 64px;
+}
+
 legend {
     border: rgba(129, 245, 106, 0.979) dashed;
     padding: 10px;
     margin-left: 158px;
     background-color: black;
     color: rgba(129, 245, 106, 0.979);
+}
+
+.alertMessage {
+    color: White;
+    font-size: large;
+    text-align: center;
+
 }
 
 .fieldset-spacer {
@@ -350,8 +396,7 @@ footer {
 }
 
 /* Mobile Viewport Style */
-@media screen and (max-width: 800px)
-{
+@media screen and (max-width: 670px) {
     /* Default Style */
     body {
         font-size: medium;
@@ -374,26 +419,163 @@ footer {
     .nav {
         flex-direction: column;
     }
-    /* Platforms */
-    .mainbox-platforms3{
+
+    /* Mindset Style */
+    /* ---Challenge--- */
+    .challengeBox {
+        display: flex;
         flex-direction: column;
-        gap: 30px;
     }
 
-    .tableAside {
-        display: block;
-        height: 50px;
-        width: 100%;
+    .block {
+        width: auto;
     }
 
+    .challengeBox figure {
+        width: auto;
+    }
+
+    /* ---OVercome--- */
+    .overcomeBox {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .block2 {
+        width: auto; 
+    }
+
+    .overcomeBox figure {
+        width: auto;
+    }
+
+    .overcomeBox img {
+        width: 200px;
+        height: 300px;
+        margin: auto;
+    }
+
+    /* Platforms Style */
     .platform-images {
         flex-direction: column;
         margin: auto;
+        width: auto;
+        gap: 30px;
     }
 
+    .mainbox-platforms3{
+        flex-direction: column;
+        min-height: 200vh;
+        gap: 10px;
+    }
+
+    .platform-images figure {
+        margin: auto;
+        width: auto;
+    }
+
+    aside {
+        display: block;
+        border: 3px white solid;
+        height: 510px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .asideAdjust {
+        width: auto;
+        border: 2px red solid;
+    }
+
+
+    /* Platforms - Table Style */
+
     .table {
+        border: 3px white solid;
         margin: auto;
         width: 100%;
     }
 
+    .table-content {
+        width: 100%;
+        border: red 2px solid;
+    }
+
+    /* THead */
+    thead {
+        width: 100%;
+    }
+
+    th {
+        border: 3px solid white;
+        width: auto;
+    }
+
+    /* TBody */ 
+    tbody {
+        width: 100%;
+    }
+
+    td {
+        border: yellow 2px solid;
+        width: auto;
+    }
+
+    /* TFoot */
+    tfoot {
+        width: 100%;
+    }
+
+    tfoot th {
+        width: auto;
+    }
+
+    /* Contact Style */
+    fieldset {
+        display: flex;
+        flex-direction: column;
+    }
+
+    legend {
+        margin: 0;
+    }
+
+    fieldset input {
+        width: 400px;
+    }
+    fieldset #one {
+        margin-left: 0;
+    }
+
+    fieldset #two {
+        margin-left: 0;
+    }
+
+    fieldset #three {
+        margin-left: 0;
+    }
+
+    fieldset #four {
+        margin-left: 0;
+        display: flex;
+        width: 200px;
+    }
+
+    #agree {
+        border: white solid 5px;
+    }
+
+    fieldset #five {
+        margin-left: 0;
+    }
+
+    fieldset #six {
+        margin-left: 0;
+    }
+
+
+    .form-row {
+        display: flex;
+        flex-direction: column;
+    }
 }

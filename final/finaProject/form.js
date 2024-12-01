@@ -3,6 +3,7 @@ document.getElementById("form").addEventListener("submit", function(event) {
     event.preventDefault();
     const first = document.getElementById("first").value;
     const last = document.getElementById("last").value;
+    const phone = document.getElementById("phone").value;
     const email = document.getElementById("email").value;
     const agree = document.getElementById("agree").value;
 
@@ -12,19 +13,21 @@ document.getElementById("form").addEventListener("submit", function(event) {
         return;
     }
 
-    if (!email) {
-        alert("Your email is required.");
+    if (!phone) {
+        alert("Your phone number is required.");
         return;
     }
 
-    if (!agree) {
-        alert("Please agree if you're 18 and above.")
+    if (!email) {
+        alert("Your email is required.");
+        return;
     }
 
 /* Consolidate Values */
     const data = {
         first: first,
         last: last,
+        phone: phone,
         email: email,
         agree: agree
     }

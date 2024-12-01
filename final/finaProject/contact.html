@@ -32,41 +32,51 @@
                 <div>
                     <h2>About Me</h2>
                     <div class="text-spacer"></div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit aut id sapiente repudiandae. Quibusdam nobis, voluptatum quas error quasi fugiat voluptatem facilis provident fuga aperiam harum quia perferendis aspernatur velit!</p>
+                    <p>
+                        I began trading back in 2021 initially with stocks but I made a switch to <strong>futures</strong> as I prefer the <strong>volatility</strong> and <strong>fast-paced</strong> environment more. The trading materials shown are widely known in the trading community and I believe they're the fundamentals that a beginner trader must know.
+                    </p>
+                    <p>
+                        Although I only covered <strong>Retail Trading</strong>, I learned trading through a <strong>Professional Trading Group</strong>. If you want to learn more about them <strong>Sign up Below!</strong>
+                    </p>
+                    <p>
+                        <strong id="disclaimer">Reminder:</strong> I am not a financial professional and the trading contents are not advices but they're for educational purposes only.
+                    </p>
                 </div>
             </div>
         </div>
         <div class="decoration"></div>
         <div class="mainbox4-contact2">
-            <div class="fieldset-mainBox">
-                <div id="message"></div>
-                <form action="processing.html" method="POST" id="form">
-                    <fieldset>
-                        <legend>Sign Up</legend>
-                        <div class="fieldset-spacer"></div>
-                        <div id="one">
-                            <label for="first">First Name:</label>
-                            <input type="text" id="first" name="first" placeholder="..Type Here">
-                        </div>
-                        <div id="two">
-                            <label for="last">Last Name:</label>
-                            <input type="text" id="last" name="last" placeholder="..Type Here">
-                        </div>
-                        <div id="three">
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" placeholder="..Type Here">
-                        </div>
-                        <div id="four">
-                            <label for="agree">
-                            <input type="checkbox" name="agree" id="agree" value="agreed">I certify that <br>I am 18 and above.<label>
-                        </div>
-                        <div id="five">
-                            <div class="submit-spacer"></div>
-                            <input id="button" type="submit" value="Submit">
-                        </div>
-                    </fieldset>
-                </form>
-            </div>
+            <div id="message" class="alertMessage"></div>
+            <form action="processing.html" method="POST" id="form">
+                <fieldset>
+                    <legend>Sign Up Form</legend>
+                    <div class="fieldset-spacer"></div>
+                    <div id="one" class="form-row">
+                        <label for="first">First Name:</label>
+                        <input type="text" id="first" name="first" placeholder="..Type Here">
+                    </div>
+                    <div id="two" class="form-row">
+                        <label for="last">Last Name:</label>
+                        <input type="text" id="last" name="last" placeholder="..Type Here">
+                    </div>
+                    <div id="six" class="form-row">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="(000)-000-000">
+                    </div>
+                    <div id="three" class="form-row">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="..Type Here">
+                    </div>
+                    <div id="four">
+                        <input type="checkbox" name="agree" id="agree" value="agreed">
+                        <label for="agree">I acknowledge contents<br> on this website are not<br> advices.</label>
+                    </div>
+                    <div id="five">
+                        <div class="submit-spacer"></div>
+                        <input id="button" type="submit" value="Submit">
+                    </div>
+                </fieldset>
+            </form>
         </div>
     </main>
     <div class="decoration"></div>
