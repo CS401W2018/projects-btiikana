@@ -41,6 +41,10 @@ body {
 }
 
 /* Navigation Style */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+}
 nav a {
     text-decoration: none;
     color: rgba(129, 245, 106, 0.979);
@@ -242,6 +246,7 @@ aside {
 .platform-images {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -291,6 +296,10 @@ caption {
 
 th {
     background-color: rgb(66, 62, 62);
+}
+
+.tableColor {
+    color: rgb(66, 62, 62);
 }
 
 tfoot td {
@@ -512,27 +521,11 @@ footer {
     }
 
     .table-content {
-        width: auto;
+        width: 100%;
         border: red 2px solid;
-    }
-
-    /* THead */
-    thead {
-        width: auto;
-    }
-
-    thead th {
-        border: 3px solid white;
-        width: auto;
-    }
-
-    /* TBody */ 
-    tbody {
-        width: auto;
-    }
-
-    td {
-        border: yellow 2px solid;
+        border-collapse: collapse;
+        font-size: small;
+        table-layout: fixed;
 
     }
 
