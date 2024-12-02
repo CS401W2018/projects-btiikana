@@ -266,7 +266,16 @@ figcaption {
 }
 
 @media print {
-    nav, footer {
+    nav {
+        display: none;
+    }
+
+
+    nav a {
+        display: none;
+    }
+
+    footer {
         display: none;
     }
 }
