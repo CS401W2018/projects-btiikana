@@ -265,6 +265,12 @@ figcaption {
     }
 }
 
+@media print {
+    nav, footer {
+        display: none;
+    }
+}
+
 /* Footer Style */
 footer p {
     font-family: mySecondFont;
