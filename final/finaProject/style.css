@@ -496,7 +496,6 @@ footer {
 
     aside {
         display: block;
-        border: 3px white solid;
         height: 525px;
         width: auto;
         margin: auto;
@@ -504,29 +503,33 @@ footer {
 
     .asideAdjust {
         width: auto;
-        border: 2px red solid;
     }
 
 
     /* Platforms - Table Style */
+    caption {
+        font-size: medium;
+    }
+
+    caption p {
+        font-size: small;
+    }
+
     .mainbox-platforms3{
         flex-direction: column;
         gap: 10px;
     }
 
     .table {
-        border: 3px white solid;
         margin: auto;
         width: auto;
     }
 
     .table-content {
         width: 100%;
-        border: red 2px solid;
         border-collapse: collapse;
         font-size: small;
         table-layout: fixed;
-
     }
 
     /* TFoot */
