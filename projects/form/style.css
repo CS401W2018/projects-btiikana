@@ -140,12 +140,13 @@ fieldset #ten {
 
 /* Footer Style */
 footer {
-    background-color: rgba(17, 17, 17, 0.884);
-    color: white;
+    background-color: rgba(80, 44, 44, 0.884);
+    color: rgb(55, 150, 147);
     margin-left: 0;
     margin-right: 0;
     padding: 1px;
     border: black solid 5px;
+    font-size: larger;
 }
 
 @media only screen and (max-width: 600px) {
