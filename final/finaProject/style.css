@@ -596,6 +596,12 @@ footer {
         flex-direction: column;
     }
 
+    .challengeBox img {
+        width: 200px;
+        height: 300px;
+        margin: auto;
+    }
+
     .block {
         width: auto;
     }
