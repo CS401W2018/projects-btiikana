@@ -466,7 +466,6 @@ footer {
 
 /* Mobile Viewport Style */
 @media screen and (max-width: 670px) {
-/* Default Style */
     body {
         font-size: medium;
     }
@@ -566,7 +565,12 @@ footer {
 
     /* ---Where to Find Futures--- */
     .platforms {
-        min-height: 260vh;
+        min-height: 190vh;
+    }
+
+    .platforms p {
+        display: flex;
+        margin-top: 50px;
     }
 
     .platforms aside {
