@@ -243,11 +243,12 @@ aside {
 
 .challengeBox figure {
     width: 30%;
+    justify-content: end;
 }
 
 .challengeBox img {
-    width: 100%;
-    height: 100%;
+    width: 500px;
+    height: 500px;
 }
 
 .overcomeBox {
@@ -265,7 +266,7 @@ aside {
 }
 
 .overcomeBox img {
-    width: 100%;
+    width: 500px;
     height: 500px;
     margin-top: 90px;
 }
