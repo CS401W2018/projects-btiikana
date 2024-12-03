@@ -494,17 +494,18 @@ footer {
         display: flex;
         flex-direction: column;
         gap: 70px;
+        min-height: 180vh;
     }
 
     .products figure {
-        width: 300px;
-        height: 400px;
+        width: 200px;
+        height: 300px;
         margin: auto;
     }
 
     .products img {
-        width: 300px;
-        height: 400px;
+        width: 200px;
+        height: 300px;
     }
 
     /* ---Levels of Trading--- */
@@ -523,8 +524,8 @@ footer {
     }
 
     .institutional figure {
-        width: 300px;
-        height: 400px;
+        width: 200px;
+        height: 300px;
         margin: auto;
     }
 
@@ -535,8 +536,8 @@ footer {
     }
 
     .institutional img {
-        width: 300px;
-        height: 400px;
+        width: 200px;
+        height: 300px;
     }
 
     .retail {
@@ -546,8 +547,8 @@ footer {
     }
 
     .retail figure {
-        width: 300px;
-        height: 400px;
+        width: 200px;
+        height: 300px;
         margin: auto;
     }
 
@@ -558,13 +559,13 @@ footer {
     }
 
     .retail img {
-        width: 300px;
-        height: 400px;
+        width: 200px;
+        height: 300px;
     }
 
     /* ---Where to Find Futures--- */
     .platforms {
-        min-height: 130vh;
+        min-height: 260vh;
     }
 
     .platforms aside {
@@ -573,14 +574,14 @@ footer {
     }
 
     .platforms figure {
-        width: 300px;
-        height: 400px;
+        width: 200px;
+        height: 300px;
         margin: auto;
     }
 
     .platforms img {
-        width: 300px;
-        height: 400px;
+        width: 200px;
+        height: 300px;
     }
 
 /* Mindset Style */
