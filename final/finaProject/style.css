@@ -98,10 +98,21 @@ nav a:hover {
     border: rgba(129, 245, 106, 0.979) double;
 }
 
+.mainbox4-products a {
+    text-decoration: none;
+    color: rgb(211, 160, 66);
+}
+
+.mainbox4-products a:hover {
+    color: rgba(255, 255, 255, 0.658);
+}
+
 .products {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .products figure {
@@ -110,7 +121,26 @@ nav a:hover {
     border: 2px rgba(129, 245, 106, 0.979) dashed;
 }
 
+.products img {
+    height: 500px;
+    width: 400px;
+}
+
 /* Main - Levels of Trading */
+b {
+    color: maroon;
+}
+
+.institutional {
+    display: flex;
+    flex-direction: row;
+}
+
+.retail {
+    display: flex;
+    flex-direction: row;
+}
+
 .levelsbox {
     display: flex;
     flex-direction: column;
@@ -124,6 +154,17 @@ nav a:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 70px;
+}
+
+.levelsbox a {
+    text-decoration: none;
+    color: maroon;
+}
+
+.levelsbox a:hover {
+    color: gray;
 }
 
 .levels figure {
@@ -172,6 +213,17 @@ aside {
     flex-direction: row;
     margin-top: 40px;
     justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.platforms a {
+    text-decoration: none;
+    color: rgb(211, 160, 66);
+}
+
+.platforms a:hover {
+    color: gray;
 }
 
 /* Main - Mindset */
@@ -273,19 +325,15 @@ caption {
     color: white;
 }
 
-.tableAside {
-    margin-top: 32px;
-}
-
 .asideAdjust {
-    margin-top: 90px;
+    margin-top: 260px;
 }
 
 .table {
     display: flex;
     width: 70%;
     justify-content: flex-end;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .table-content {
@@ -417,7 +465,7 @@ footer {
 
 /* Mobile Viewport Style */
 @media screen and (max-width: 670px) {
-    /* Default Style */
+/* Default Style */
     body {
         font-size: medium;
     }
@@ -440,7 +488,102 @@ footer {
         flex-direction: column;
     }
 
-    /* Mindset Style */
+/* Futures Style */
+    /* ---Futures--- */
+    .products {
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+    }
+
+    .products figure {
+        width: 300px;
+        height: 400px;
+        margin: auto;
+    }
+
+    .products img {
+        width: 300px;
+        height: 400px;
+    }
+
+    /* ---Levels of Trading--- */
+    .levels {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        gap: 50px;
+    }
+
+    .institutional {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .institutional figure {
+        width: 300px;
+        height: 400px;
+        margin: auto;
+    }
+
+    .institutional aside {
+        display: block;
+        width: auto;
+        height: auto;
+    }
+
+    .institutional img {
+        width: 300px;
+        height: 400px;
+    }
+
+    .retail {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .retail figure {
+        width: 300px;
+        height: 400px;
+        margin: auto;
+    }
+
+    .retail aside {
+        display: block;
+        width: auto;
+        height: auto;
+    }
+
+    .retail img {
+        width: 300px;
+        height: 400px;
+    }
+
+    /* ---Where to Find Futures--- */
+    .platforms {
+        min-height: 130vh;
+    }
+
+    .platforms aside {
+        width: 100%;
+        height: auto;
+    }
+
+    .platforms figure {
+        width: 300px;
+        height: 400px;
+        margin: auto;
+    }
+
+    .platforms img {
+        width: 300px;
+        height: 400px;
+    }
+
+/* Mindset Style */
     /* ---Challenge--- */
     .challengeBox {
         display: flex;
@@ -475,11 +618,9 @@ footer {
         margin: auto;
     }
 
-    /* Platforms Style */
+/* Platforms Style */
     .mainbox-platforms3{
         flex-direction: column;
-        min-height: 200vh;
-        gap: 10px;
     }
 
     .platform-images {
@@ -505,8 +646,7 @@ footer {
         width: auto;
     }
 
-
-    /* Platforms - Table Style */
+    /* ---Platforms - Table--- */
     caption {
         font-size: medium;
     }
@@ -532,7 +672,7 @@ footer {
         table-layout: fixed;
     }
 
-    /* TFoot */
+    /* ---TFoot--- */
     tfoot {
         width: auto;
     }
@@ -541,7 +681,7 @@ footer {
         width: auto;
     }
 
-    /* Contact Style */
+/* Contact Style */
     fieldset {
         display: flex;
         flex-direction: column;
