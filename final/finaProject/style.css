@@ -85,6 +85,52 @@ nav a:hover {
 .home {
     background-color: white;
 }
+
+.intro {
+    display: flex;
+    flex-direction: row;
+    border: black solid 10px;
+    background-color: white;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: auto;
+    justify-content: space-between;
+    background: url(blackbgrnd2.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.intro figure {
+    width: 700px;
+    height: 700px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+.intro img {
+    width: 700px;
+    height: 700px;
+}
+
+.homeImage figure {
+    border-left: goldenrod 10px solid;
+}
+
+.welcomebox {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.welcome {
+    font-size: xx-large;
+    font-weight: 900;
+    color: white;
+    margin-left: 0;
+    margin-right: 0;
+    border-top: goldenrod solid 10px;
+    border-bottom: goldenrod solid 10px;
+}
+
 /* Futures */
 .spacer {
     display: flex;
@@ -393,6 +439,28 @@ aside {
     height: 500px;
 }
 
+.videoBox {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    justify-content: center;
+    width: auto;
+}
+
+.videoBox video {
+    width: 900px;
+    margin: auto;
+}
+
+.videoBox h3 {
+    color: black;
+    border-top: black solid 4px;
+    border-bottom: black solid 4px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
 /* Platforms */
 .mainbox-platforms {
     display: flex;
@@ -586,8 +654,8 @@ legend {
 /* Footer Style */
 footer {
     padding: 10px;
-    margin-top: auto;
     color: gold;
+    margin-top: auto;
     background-color: black;
 }
 
@@ -614,6 +682,29 @@ footer {
     .nav {
         flex-direction: column;
     }
+/* Home Style */
+.intro {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.intro figure {
+    width: auto;
+    height: 300px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.intro img {
+    width: 259px;
+    height: 300px;
+}
+
+.welcome {
+    display: block;
+    border-top: goldenrod solid 10px;
+    border-bottom: goldenrod solid 10px;
+}
 
 /* Futures Style */
     /* ---Futures--- */
@@ -807,6 +898,26 @@ footer {
     .execution img {
         width: 200px;
         height: 300px;
+    }
+
+    .videoBox {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: white;
+        border-top: black solid 4px;
+        border-bottom: black solid 4px;
+        justify-content: center;
+        width: auto;
+    }
+    
+    .videoBox video {
+        width: 270px;
+        margin: auto;
+    }
+
+    .videoBox h3 {
+        margin: auto;
     }
 
 /* Platforms Style */
