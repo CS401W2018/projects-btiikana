@@ -859,8 +859,7 @@ footer {
 
     .table {
         margin: auto;
-        width: auto;
-        border: red solid;
+        width: 95%;
     }
 
     .table-content {
