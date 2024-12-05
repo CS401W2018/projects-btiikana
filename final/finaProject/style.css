@@ -3,11 +3,19 @@ body {
     font-family: headerFont;
     font-size: large;
     margin: 0;
-    color: rgba(129, 245, 106, 0.979);
+    color: goldenrod;
     display: flex;
     flex-direction: column;
     background-color: black;
     min-height: 100vh;
+}
+
+h1 {
+    color: gold;
+}
+
+h2 {
+    color: gold;
 }
 
 @font-face {
@@ -26,7 +34,8 @@ body {
 
 /* Header Style */
 .current {
-    border: 2px green solid;
+    border-top: 3px goldenrod solid;
+    border-bottom: 3px goldenrod solid;
 }
 
 .box {
@@ -34,9 +43,6 @@ body {
     flex-direction: row;
     background-color: white;
     width: auto;
-    border-top: 3px rgba(129, 245, 106, 0.979) solid;
-    border-bottom: 3px rgba(129, 245, 106, 0.979) solid;
-    border-style: double;
     background-color: black;
 }
 
@@ -47,7 +53,7 @@ nav {
 }
 nav a {
     text-decoration: none;
-    color: rgba(129, 245, 106, 0.979);
+    color: gold;
 }
 
 nav a:hover {
@@ -74,7 +80,12 @@ nav a:hover {
     margin: auto;
 }
 
-/* Main - Futures */
+/* Main Style */
+/* Home Page */
+.home {
+    background-color: white;
+}
+/* Futures */
 .spacer {
     display: flex;
     padding: 20px;
@@ -90,17 +101,16 @@ nav a:hover {
     flex-direction: column;
 }
 
-/* Main - What are Futures */
+/* What are Futures */
 .mainbox4-products {
     display: flex;
     flex-direction: column;
     min-height: 68vh;
-    border: rgba(129, 245, 106, 0.979) double;
 }
 
 .mainbox4-products a {
     text-decoration: none;
-    color: rgb(211, 160, 66);
+    color: maroon;
 }
 
 .mainbox4-products a:hover {
@@ -116,9 +126,10 @@ nav a:hover {
 }
 
 .products figure {
-    height: 500px;
+    height: 550px;
     width: 400px;
-    border: 2px rgba(129, 245, 106, 0.979) dashed;
+    border-top: goldenrod solid 4px;
+    border-bottom: goldenrod solid 4px;
 }
 
 .products img {
@@ -126,7 +137,7 @@ nav a:hover {
     width: 400px;
 }
 
-/* Main - Levels of Trading */
+/* Levels of Trading */
 b {
     color: maroon;
 }
@@ -146,7 +157,8 @@ b {
     flex-direction: column;
     background-color: rgb(255, 255, 255);
     color: black;
-    border: black double;
+    border-top: black solid 4px;
+    border-bottom: black solid 4px;
     min-height: 68vh;
 }
 
@@ -156,6 +168,10 @@ b {
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 70px;
+}
+
+.levelsbox h2 {
+    color: black;
 }
 
 .levelsbox a {
@@ -170,12 +186,13 @@ b {
 .levels figure {
     height: 500px;
     width: 400px;
-    border: 2px black dashed;
+    border-top: black solid 4px;
+    border-bottom: black solid 4px;
 }
 
 .levels img {
     height: 500px;
-    width: 400px;   
+    width: 400px;
 }
 
 .levels aside {
@@ -183,7 +200,7 @@ b {
     width: 200px;
 }
 
-/* Main - Where to find Futures */
+/* Where to find Futures */
 aside {
     margin-top: 15px;
     height: 300px;
@@ -194,18 +211,18 @@ aside {
     display: flex;
     flex-direction: column;
     min-height: 60vh;
-    border: rgba(129, 245, 106, 0.979) double;
 }
 
 .wherebox figure {
-    height: 500px;
-    width: 400px;
-    border: 2px rgba(129, 245, 106, 0.979) dashed;    
+    height: 530px;
+    width: 400px;   
+    border-top: goldenrod solid 4px;
+    border-bottom: goldenrod solid 4px;
 }
 
 .wherebox img {
     height: 500px;
-    width: 400px;   
+    width: 400px;
 }
 
 .platforms {
@@ -219,14 +236,19 @@ aside {
 
 .platforms a {
     text-decoration: none;
-    color: rgb(211, 160, 66);
+    color: maroon;
 }
 
 .platforms a:hover {
     color: gray;
 }
 
-/* Main - Mindset */
+.videoLink {
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+/* Mindset */
 #disclaimer {
     color: red;
 }
@@ -271,19 +293,128 @@ aside {
     margin-top: 90px;
 }
 
-/* Main - Platforms */
+/* Indicators */
+.indicators {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+.indicators a {
+    text-decoration: none;
+    color: rgb(211, 160, 66);
+}
+
+.indicators a:hover {
+    color: gray;
+}
+
+.chartBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.charts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.charts figure {
+    width: 400px;
+    height: 530px;
+    border-top: goldenrod solid 4px;
+    border-bottom: goldenrod solid 4px;
+}
+
+.charts img {
+    width: 400px;
+    height: 500px;
+}
+
+.strategyBox {
+    background-color: white;
+    border-top: black solid 4px;
+    border-bottom: black solid 4px;
+    color: black;
+}
+
+.strategyBox a{
+    color: maroon;
+}
+
+.strategyBox strong {
+    color: black;
+    font-weight: 600;
+}
+
+.strategy {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.strategy figure {
+    width: 400px;
+    height: 530px;
+    border-top: black solid 4px;
+    border-bottom: black solid 4px;
+}
+
+.strategy img {
+    width: 400px;
+    height: 500px;
+}
+
+.executionBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.execution {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.execution figure {
+    width: 400px;
+    height: 530px;
+    border-top: goldenrod solid 4px;
+    border-bottom: goldenrod solid 4px;
+}
+
+.execution img {
+    width: 400px;
+    height: 500px;
+}
+
+/* Platforms */
 .mainbox-platforms {
     display: flex;
     flex-direction: column;
     min-height: 68vh;
-    border: rgba(129, 245, 106, 0.979) double;
+}
+
+.mainbox-platforms a {
+    text-decoration: none;
+    color: maroon;
+}
+
+.mainbox-platforms a:hover {
+    color: gray;
 }
 
 .mainbox-platforms2 {
     display: flex;
     flex-direction: column;
     min-height: 68vh;
-    border: black double;
+    border-top: black solid 4px;
+    border-bottom: black solid 4px;
     color: black;
     background-color: white;
 }
@@ -292,7 +423,6 @@ aside {
     display: flex;
     flex-direction: row;
     min-height: 75vh;
-    border: rgba(129, 245, 106, 0.979) double;
     gap: 100px;
 }
 
@@ -306,14 +436,15 @@ aside {
 .platform-images figure {
     display: flex;
     flex-direction: column;
-    border: black dashed;
+    border-top: black solid 4px;
+    border-bottom: black solid 4px;
     height: 500px;
-    width: 500px;
+    width: 400px;
 }
 
 .platform-images img {
     height: 500px;
-    width: 100%;
+    width: 400px;
 }
 
 strong {
@@ -360,14 +491,12 @@ tfoot td {
 .mainbox4-contact {
     display: flex;
     flex-direction: column;
-    border: rgba(129, 245, 106, 0.979) double;
 }
 
 .mainbox4-contact2 {
     display: flex;
     flex-direction: column;
     min-height: 50vh;
-    border: rgba(129, 245, 106, 0.979) double;
     background-color: black;
 }
 
@@ -386,12 +515,11 @@ fieldset {
     border: 5px black dashed;
     margin-top: 100px;
     color: black;
-    background-color: rgba(129, 245, 106, 0.979);
+    background-color: goldenrod;
 }
 
 fieldset input {
     background-color: black;
-    border: rgba(129, 245, 106, 0.979) 2px dashed;
     height: 24px;
     color: white;
     font-size: medium;
@@ -431,11 +559,11 @@ fieldset #six {
 }
 
 legend {
-    border: rgba(129, 245, 106, 0.979) dashed;
+    border: goldenrod dashed;
     padding: 10px;
     margin-left: 158px;
     background-color: black;
-    color: rgba(129, 245, 106, 0.979);
+    color: goldenrod;
 }
 
 .alertMessage {
@@ -458,10 +586,9 @@ legend {
 /* Footer Style */
 footer {
     padding: 10px;
-    border-top: 3px rgba(129, 245, 106, 0.979) solid;
-    border-bottom: 3px rgba(129, 245, 106, 0.979) solid;
-    border-style: double;
     margin-top: auto;
+    color: gold;
+    background-color: black;
 }
 
 /* Mobile Viewport Style */
@@ -630,6 +757,58 @@ footer {
         margin: auto;
     }
 
+/* Indicators Style */
+    .chartBox {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .chartBox aside {
+        display: block;
+        width: auto;
+        height: auto;
+    }
+
+    .charts {
+        margin-top: 40px;
+        gap: 30px;
+    }
+
+    .charts figure {
+        width: 200px;
+        height: 347px;
+    }
+
+    .charts img {
+        width: 200px;
+        height: 300px;
+    }
+
+    .strategy figure {
+        width: 200px;
+        height: 330px;
+    }
+
+    .strategy img {
+        width: 200px;
+        height: 300px;
+    }
+
+    .executionBox {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .execution figure {
+        width: 200px;
+        height: 330px;
+    }
+
+    .execution img {
+        width: 200px;
+        height: 300px;
+    }
+
 /* Platforms Style */
     .mainbox-platforms3{
         flex-direction: column;
@@ -644,7 +823,13 @@ footer {
 
     .platform-images figure {
         margin: auto;
-        width: auto;
+        width: 200px;
+        height: 300px;
+    }
+
+    .platform-images img {
+        width: 100%;
+        height: 300px;
     }
 
     aside {
@@ -675,10 +860,10 @@ footer {
     .table {
         margin: auto;
         width: auto;
+        border: red solid;
     }
 
     .table-content {
-        width: 100%;
         border-collapse: collapse;
         font-size: small;
         table-layout: fixed;
