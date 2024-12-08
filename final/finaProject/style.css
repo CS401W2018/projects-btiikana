@@ -21,7 +21,8 @@ body {
     color: gold;
     text-align: center;
     padding: 2px;
-    border-top: white solid 4px;
+    border-top: gold solid 4px;
+    border-bottom: gold solid 4px;
 
 }
 
