@@ -10,6 +10,25 @@ body {
     min-height: 100vh;
 }
 
+.next {
+    font-size: large;
+    text-align: right;
+}
+
+.next a {
+    text-decoration: none;
+    background-color: black;
+    color: gold;
+    text-align: center;
+    padding: 2px;
+    border-top: white solid 4px;
+
+}
+
+.next a:hover {
+    color: white;
+}
+
 h1 {
     color: gold;
 }
